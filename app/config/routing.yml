@@ -1,5 +1,5 @@
-ticket:
-    resource: "@TicketBundle/Resources/config/routing.yml"
+lo_ticket:
+    resource: "@LOTicketBundle/Resources/config/routing.yml"
     prefix:   /
 
 app:

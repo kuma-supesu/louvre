@@ -1,21 +1,16 @@
 {
-    "name": "kuma/my_project",
+    "name": "kuma/louvre",
     "license": "proprietary",
     "type": "project",
     "autoload": {
-        "psr-4": {
-            "AppBundle\\": "src/AppBundle",
-            "TicketBundle\\": "src/TicketBundle"
-        },
+        "psr-4": { "": "src/" },
         "classmap": [
             "app/AppKernel.php",
             "app/AppCache.php"
         ]
     },
     "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        },
+        "psr-4": { "": "src/" },
         "files": [
             "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
         ]
