@@ -127,20 +127,4 @@ class commande
      *
      * @return commande
      */
-    public function setTicket(\LO\TicketBundle\Entity\Ticket $ticket)
-    {
-        $this->ticket = $ticket;
-
-        return $this;
-    }
-
-    /**
-     * Get ticket
-     *
-     * @return \LO\TicketBundle\Entity\Ticket
-     */
-    public function getTicket()
-    {
-        return $this->ticket;
-    }
 }
