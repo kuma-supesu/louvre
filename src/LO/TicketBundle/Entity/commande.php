@@ -13,12 +13,6 @@ use Doctrine\ORM\Mapping as ORM;
 class commande
 {
     /**
-     * @ORM\ManyToOne(targetEntity="LO\TicketBundle\Entity\Ticket")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $ticket;
-
-    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
