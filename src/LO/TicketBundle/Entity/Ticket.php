@@ -29,11 +29,32 @@ class Ticket
     private $date;
 
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="nb_ticket", type="integer")
+     * @ORM\Column(name="name", type="string", length=255)
      */
-    private $nbTicket;
+    private $name;
+
+    /**
+     * @var array
+     *
+     * @ORM\Column(name="country", type="array")
+     */
+    private $country;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="reduc", type="boolean")
+     */
+    private $reduc;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="day", type="boolean")
+     */
+    private $day;
 
     /**
      * Get id
@@ -69,27 +90,4 @@ class Ticket
         return $this->date;
     }
 
-    /**
-     * Set nbTicket
-     *
-     * @param integer $nbTicket
-     *
-     * @return Ticket
-     */
-    public function setNbTicket($nbTicket)
-    {
-        $this->nbTicket = $nbTicket;
-
-        return $this;
-    }
-
-    /**
-     * Get nbTicket
-     *
-     * @return integer
-     */
-    public function getNbTicket()
-    {
-        return $this->nbTicket;
-    }
 }
