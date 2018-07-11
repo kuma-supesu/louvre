@@ -13,6 +13,12 @@ use Doctrine\ORM\Mapping as ORM;
 class Ticket
 {
     /**
+     * @ORM\ManyToOne(targetEntity="LO\TicketBundle\Entity\commande")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $commande;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -22,18 +28,46 @@ class Ticket
     private $id;
 
     /**
-     * @var \DateTime
+     * @var string
      *
-     * @ORM\Column(name="date", type="datetime")
+     * @ORM\Column(name="first_name", type="string", length=255)
      */
-    private $date;
+    private $fname;
 
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="nb_ticket", type="integer")
+     * @ORM\Column(name="last_name", type="string", length=255)
      */
-    private $nbTicket;
+    private $lname;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="birthday", type="date")
+     */
+    private $birthday;
+
+    /**
+     * @var array
+     *
+     * @ORM\Column(name="country", type="array")
+     */
+    private $country;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="reduc", type="boolean")
+     */
+    private $reduc;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="day", type="boolean")
+     */
+    private $day;
 
     /**
      * Get id
@@ -46,27 +80,26 @@ class Ticket
     }
 
     /**
-     * Set date
+     * Set commande
      *
-     * @param \DateTime $date
+     * @param \LO\TicketBundle\Entity\commande $commande
      *
      * @return Ticket
      */
-    public function setDate($date)
+    public function setCommande(\LO\TicketBundle\Entity\commande $commande = null)
     {
-        $this->date = $date;
+        $this->commande = $commande;
 
         return $this;
     }
 
     /**
-     * Get date
+     * Get commande
      *
-     * @return \DateTime
+     * @return \LO\TicketBundle\Entity\commande
      */
-    public function getDate()
+    public function getCommande()
     {
-        return $this->date;
+        return $this->commande;
     }
 }
-

@@ -24,17 +24,30 @@ class commande
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="birthday", type="date")
-     */
-    private $birthday;
-
-
-    /**
-     * @var \DateTime
-     *
      * @ORM\Column(name="booking", type="date")
      */
     private $booking;
+
+    /**
+     * @var \string
+     *
+     * @ORM\Column(name="booking_code", type="string")
+     */
+    private $booking_code;
+
+    /**
+     * @var \string
+     *
+     * @ORM\Column(name="email", type="string")
+     */
+    private $email;
+
+    /**
+     * @var \int
+     *
+     * @ORM\Column(name="ticket_number", type="integer")
+     */
+    private $ticket_number;
 
 
     /**
@@ -45,55 +58,6 @@ class commande
     public function getId()
     {
         return $this->id;
-    }
-
-
-    /**
-     * Set birthday
-     *
-     * @param \DateTime $birthday
-     *
-     * @return commande
-     */
-    public function setBirthday($birthday)
-    {
-        $this->birthday = $birthday;
-
-        return $this;
-    }
-
-    /**
-     * Get birthday
-     *
-     * @return \DateTime
-     */
-    public function getBirthday()
-    {
-        return $this->birthday;
-    }
-
-        /**
-     * Set nbTicket
-     *
-     * @param integer $nbTicket
-     *
-     * @return commande
-     */
-    public function setNbTicket($nbTicket)
-    {
-        $this->nbTicket = $nbTicket;
-
-        return $this;
-    }
-
-    /**
-     * Get nbTicket
-     *
-     * @return int
-     */
-    public function getNbTicket()
-    {
-        return $this->nbTicket;
     }
 
     /**
@@ -121,10 +85,74 @@ class commande
     }
 
     /**
-     * Set ticket
+     * Set bookingCode
      *
-     * @param \LO\TicketBundle\Entity\Ticket $ticket
+     * @param string $bookingCode
      *
      * @return commande
      */
+    public function setBookingCode($bookingCode)
+    {
+        $this->booking_code = $bookingCode;
+
+        return $this;
+    }
+
+    /**
+     * Get bookingCode
+     *
+     * @return string
+     */
+    public function getBookingCode()
+    {
+        return $this->booking_code;
+    }
+
+    /**
+     * Set email
+     *
+     * @param string $email
+     *
+     * @return commande
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get email
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * Set ticketNumber
+     *
+     * @param integer $ticketNumber
+     *
+     * @return commande
+     */
+    public function setTicketNumber($ticketNumber)
+    {
+        $this->ticket_number = $ticketNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get ticketNumber
+     *
+     * @return integer
+     */
+    public function getTicketNumber()
+    {
+        return $this->ticket_number;
+    }
 }

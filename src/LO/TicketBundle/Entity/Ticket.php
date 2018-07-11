@@ -28,18 +28,25 @@ class Ticket
     private $id;
 
     /**
-     * @var \DateTime
+     * @var string
      *
-     * @ORM\Column(name="date", type="datetime")
+     * @ORM\Column(name="first_name", type="string", length=255)
      */
-    private $date;
+    private $fname;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="last_name", type="string", length=255)
      */
-    private $name;
+    private $lname;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="birthday", type="date")
+     */
+    private $birthday;
 
     /**
      * @var array
@@ -73,27 +80,171 @@ class Ticket
     }
 
     /**
-     * Set date
+     * Set fname
      *
-     * @param \DateTime $date
+     * @param string $fname
      *
      * @return Ticket
      */
-    public function setDate($date)
+    public function setFname($fname)
     {
-        $this->date = $date;
+        $this->fname = $fname;
 
         return $this;
     }
 
     /**
-     * Get date
+     * Get fname
+     *
+     * @return string
+     */
+    public function getFname()
+    {
+        return $this->fname;
+    }
+
+    /**
+     * Set lname
+     *
+     * @param string $lname
+     *
+     * @return Ticket
+     */
+    public function setLname($lname)
+    {
+        $this->lname = $lname;
+
+        return $this;
+    }
+
+    /**
+     * Get lname
+     *
+     * @return string
+     */
+    public function getLname()
+    {
+        return $this->lname;
+    }
+
+    /**
+     * Set birthday
+     *
+     * @param \DateTime $birthday
+     *
+     * @return Ticket
+     */
+    public function setBirthday($birthday)
+    {
+        $this->birthday = $birthday;
+
+        return $this;
+    }
+
+    /**
+     * Get birthday
      *
      * @return \DateTime
      */
-    public function getDate()
+    public function getBirthday()
     {
-        return $this->date;
+        return $this->birthday;
+    }
+
+    /**
+     * Set country
+     *
+     * @param array $country
+     *
+     * @return Ticket
+     */
+    public function setCountry($country)
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    /**
+     * Get country
+     *
+     * @return array
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * Set reduc
+     *
+     * @param boolean $reduc
+     *
+     * @return Ticket
+     */
+    public function setReduc($reduc)
+    {
+        $this->reduc = $reduc;
+
+        return $this;
+    }
+
+    /**
+     * Get reduc
+     *
+     * @return boolean
+     */
+    public function getReduc()
+    {
+        return $this->reduc;
+    }
+
+    /**
+     * Set day
+     *
+     * @param boolean $day
+     *
+     * @return Ticket
+     */
+    public function setDay($day)
+    {
+        $this->day = $day;
+
+        return $this;
+    }
+
+    /**
+     * Get day
+     *
+     * @return boolean
+     */
+    public function getDay()
+    {
+        return $this->day;
+    }
+
+    /**
+     * Set commande
+     *
+     * @param \LO\TicketBundle\Entity\commande $commande
+     *
+     * @return Ticket
+     */
+    public function setCommande(\LO\TicketBundle\Entity\commande $commande = null)
+    {
+        $this->commande = $commande;
+
+        return $this;
+    }
+
+    /**
+     * Get commande
+     *
+     * @return \LO\TicketBundle\Entity\commande
+     */
+    public function getCommande()
+    {
+        return $this->commande;
     }
 
 }

@@ -13,12 +13,6 @@ use Doctrine\ORM\Mapping as ORM;
 class commande
 {
     /**
-     * @ORM\ManyToOne(targetEntity="LO\TicketBundle\Entity\Ticket")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $ticket;
-
-    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -30,18 +24,30 @@ class commande
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="birthday", type="date")
-     */
-    private $birthday;
-
-
-    /**
-     * @var \DateTime
-     *
      * @ORM\Column(name="booking", type="date")
      */
     private $booking;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="booking_code", type="string")
+     */
+    private $booking_code;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="email", type="string")
+     */
+    private $email;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="ticket_number", type="integer")
+     */
+    private $ticket_number;
 
     /**
      * Get id
@@ -53,77 +59,4 @@ class commande
         return $this->id;
     }
 
-
-    /**
-     * Set birthday
-     *
-     * @param \DateTime $birthday
-     *
-     * @return commande
-     */
-    public function setBirthday($birthday)
-    {
-        $this->birthday = $birthday;
-
-        return $this;
-    }
-
-    /**
-     * Get birthday
-     *
-     * @return \DateTime
-     */
-    public function getBirthday()
-    {
-        return $this->birthday;
-    }
-
-        /**
-     * Set nbTicket
-     *
-     * @param integer $nbTicket
-     *
-     * @return commande
-     */
-    public function setNbTicket($nbTicket)
-    {
-        $this->nbTicket = $nbTicket;
-
-        return $this;
-    }
-
-    /**
-     * Get nbTicket
-     *
-     * @return int
-     */
-    public function getNbTicket()
-    {
-        return $this->nbTicket;
-    }
-
-    /**
-     * Set booking
-     *
-     * @param \DateTime $booking
-     *
-     * @return commande
-     */
-    public function setBooking($booking)
-    {
-        $this->booking = $booking;
-
-        return $this;
-    }
-
-    /**
-     * Get booking
-     *
-     * @return \DateTime
-     */
-    public function getBooking()
-    {
-        return $this->booking;
-    }
 }
-

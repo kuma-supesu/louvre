@@ -1,3 +1,7 @@
-lo_ticket_homepage:
-    path:     /ticket
-    defaults: { _controller: LOTicketBundle:Ticket:index }
+lo_commande_homepage:
+    path:     /
+    defaults: { _controller: LOTicketBundle:commande:index }
+
+lo_commande_form:
+    path:     /commande
+    defaults: { _controller: LOTicketBundle:commande:add }
