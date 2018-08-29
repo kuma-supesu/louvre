@@ -12,10 +12,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Ticket
 {
+
     /**
      * @ORM\ManyToOne(targetEntity="LO\TicketBundle\Entity\commande")
      * @ORM\JoinColumn(nullable=true)
-     */
+*/
     private $commande;
 
     /**
@@ -30,14 +31,14 @@ class Ticket
     /**
      * @var string
      *
-     * @ORM\Column(name="first_name", type="string", length=255)
+     * @ORM\Column(name="f_name", type="string", length=255)
      */
     private $fname;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="last_name", type="string", length=255)
+     * @ORM\Column(name="l_name", type="string", length=255)
      */
     private $lname;
 
@@ -74,6 +75,7 @@ class Ticket
      *
      * @return int
      */
+
     public function getId()
     {
         return $this->id;

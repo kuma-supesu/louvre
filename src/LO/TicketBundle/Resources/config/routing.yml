@@ -5,3 +5,7 @@ lo_commande_homepage:
 lo_commande_form:
     path:     /commande
     defaults: { _controller: LOTicketBundle:commande:add }
+
+lo_ticket_form:
+    path:     /ticket
+    defaults: { _controller: LOTicketBundle:Ticket:add }

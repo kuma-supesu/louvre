@@ -12,6 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class commande
 {
+
     /**
      * @var int
      *
@@ -154,5 +155,29 @@ class commande
     public function getTicketNumber()
     {
         return $this->ticket_number;
+    }
+
+    /**
+     * Set ticket
+     *
+     * @param \LO\TicketBundle\Entity\Ticket $ticket
+     *
+     * @return Ticket
+     */
+    public function setTicket(\LO\TicketBundle\Entity\Ticket $ticket = null)
+    {
+        $this->ticket = $ticket;
+
+        return $this;
+    }
+
+    /**
+     * Get ticket
+     *
+     * @return \LO\TicketBundle\Entity\Ticket
+     */
+    public function getTicket()
+    {
+        return $this->ticket;
     }
 }

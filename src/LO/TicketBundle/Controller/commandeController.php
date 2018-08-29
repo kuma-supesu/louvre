@@ -6,8 +6,13 @@ use LO\TicketBundle\Entity\commande;
 use LO\TicketBundle\Entity\Ticket;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class commandeController
+class commandeController extends Controller
 {
 
     public function indexAction()
@@ -17,22 +22,35 @@ class commandeController
 
     public function addAction(Request $request)
     {
-        $commande= new Commande();
+        $commande = new commande();
+        $commande->setBookingCode(random_int(100, 1000000));
 
-        $formBuilder = $this->get('form.factory')->createBuilder(FormType::class, $commande);
+        $form = $this->createFormBuilder($commande)
+            ->add('booking', DateType::class)
+            ->add('booking_code', HiddenType::class)
+            ->add('email', TextType::class)
+            ->add('ticket_number', IntegerType::class)
+            ->add('save', SubmitType::class, array('label' => 'Create Task'))
+            ->getForm();
 
-        $formBuilder
-            ->add('booking',      DateType::class)
-            ->add('booking_code',     TextType::class)
-            ->add('email',   TextareaType::class)
-            ->add('ticket_number',    IntegerType::class)
-        ;
+        if ($request->isMethod('POST')) {
 
-        $form = $formBuilder->getForm();
+            $form->handleRequest($request);
 
-        return $this->render('@OCPlatformBundle:commande:add.html.twig', array(
-            'form' => $form->createView(),
-        ));
+            if ($form->isValid()) {
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($commande);
+                $em->flush();
+
+                return $this->redirectToRoute('lo_ticket_form', array('ticket_number' => $commande->getTicketNumber(),
+                        'currentForm' => 1
+                    )
+                );
+            }
+        }
+                return $this->render('@LOTicket/commande.html.twig', array(
+                    'form' => $form->createView(),
+                ));
     }
-
 }
