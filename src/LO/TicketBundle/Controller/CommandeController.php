@@ -2,8 +2,7 @@
 
 
 namespace LO\TicketBundle\Controller;
-use LO\TicketBundle\Entity\commande;
-use LO\TicketBundle\Entity\Ticket;
+use LO\TicketBundle\Entity\Commande;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -12,7 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class commandeController extends Controller
+class CommandeController extends Controller
 {
 
     public function indexAction()
@@ -22,7 +21,7 @@ class commandeController extends Controller
 
     public function addAction(Request $request)
     {
-        $commande = new commande();
+        $commande = new Commande();
         $commande->setBookingCode(random_int(100, 1000000));
 
         $form = $this->createFormBuilder($commande)
@@ -30,7 +29,7 @@ class commandeController extends Controller
             ->add('booking_code', HiddenType::class)
             ->add('email', TextType::class)
             ->add('ticket_number', IntegerType::class)
-            ->add('save', SubmitType::class, array('label' => 'Create Task'))
+            ->add('save', SubmitType::class, array('label' => 'Suivant'))
             ->getForm();
 
         if ($request->isMethod('POST')) {
@@ -44,7 +43,7 @@ class commandeController extends Controller
                 $em->flush();
 
                 return $this->redirectToRoute('lo_ticket_form', array('ticket_number' => $commande->getTicketNumber(),
-                        'currentForm' => 1
+                        'currentForm' => 1, 'commandeId' =>  $commande->getId()
                     )
                 );
             }

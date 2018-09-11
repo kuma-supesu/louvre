@@ -1,3 +1,7 @@
+lo_ticket_ticket:
+    resource: "@LOTicketBundle/Controller/TicketController.php"
+    type:     annotation
+
 lo_ticket:
     resource: "@LOTicketBundle/Resources/config/routing.yml"
     prefix:   /

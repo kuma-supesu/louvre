@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Ticket</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ ticket.id }}</td>
+            </tr>
+            <tr>
+                <th>Fname</th>
+                <td>{{ ticket.fname }}</td>
+            </tr>
+            <tr>
+                <th>Lname</th>
+                <td>{{ ticket.lname }}</td>
+            </tr>
+            <tr>
+                <th>Birthday</th>
+                <td>{% if ticket.birthday %}{{ ticket.birthday|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>{% if ticket.country %}{{ ticket.country|join(', ') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Reduc</th>
+                <td>{% if ticket.reduc %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Day</th>
+                <td>{% if ticket.day %}Yes{% else %}No{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('crud_ticket_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}

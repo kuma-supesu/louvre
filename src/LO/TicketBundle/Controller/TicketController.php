@@ -1,8 +1,8 @@
 <?php
 
 namespace LO\TicketBundle\Controller;
-use LO\TicketBundle\Entity\commande;
 use LO\TicketBundle\Entity\Ticket;
+use LO\TicketBundle\Entity\Commande;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\CountryType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
@@ -13,13 +13,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class TicketController extends Controller
 {
+
     public function addAction(Request $request)
     {
+
         $nbs = (int) $request->query->get('ticket_number');
 
         if ($request->query->get('currentForm')){
             $i = (int) $request->query->get('currentForm');
         }
+
+        $id = (int) $request->query->get('commandeId');
+        $em = $this->getDoctrine()->getManagerForClass(Ticket::class)->find(Commande::class, $id);
 
         $ticket = new ticket();
 
@@ -33,10 +38,11 @@ class TicketController extends Controller
                 ->add('save',   SubmitType::class, array('label' => 'Create Task'))
                 ->getForm();
 
+        $ticket->setCommande($em);
+
         if ($request->isMethod('POST')) {
             $form->handleRequest($request);
             if ($form->isValid()) {
-
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($ticket);
                 $em->flush();
@@ -47,7 +53,7 @@ class TicketController extends Controller
                 }
                 else
                     return $this->redirectToRoute('lo_ticket_form', array('ticket_number' => $nbs,
-                            'currentForm' => $i
+                            'currentForm' => $i, 'commandeId' => $id
                         )
                     );
             }

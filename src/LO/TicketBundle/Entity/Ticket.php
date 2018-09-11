@@ -3,6 +3,7 @@
 namespace LO\TicketBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use LO\TicketBundle\Entity\Commande as Commande;
 
 /**
  * Ticket
@@ -14,7 +15,7 @@ class Ticket
 {
 
     /**
-     * @ORM\ManyToOne(targetEntity="LO\TicketBundle\Entity\commande")
+     * @ORM\ManyToOne(targetEntity="LO\TicketBundle\Entity\Commande")
      * @ORM\JoinColumn(nullable=true)
 */
     private $commande;
@@ -228,11 +229,11 @@ class Ticket
     /**
      * Set commande
      *
-     * @param \LO\TicketBundle\Entity\commande $commande
+     * @param \LO\TicketBundle\Entity\Commande $commande
      *
      * @return Ticket
      */
-    public function setCommande(\LO\TicketBundle\Entity\commande $commande = null)
+    public function setCommande(Commande $commande = null)
     {
         $this->commande = $commande;
 
@@ -242,7 +243,7 @@ class Ticket
     /**
      * Get commande
      *
-     * @return \LO\TicketBundle\Entity\commande
+     * @return \LO\TicketBundle\Entity\Commande
      */
     public function getCommande()
     {

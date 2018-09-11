@@ -1,10 +1,14 @@
+lo_ticket_crud_ticket:
+    resource: "@LOTicketBundle/Resources/config/routing/ticket.yml"
+    prefix:   /crud_ticket
+
 lo_commande_homepage:
     path:     /
-    defaults: { _controller: LOTicketBundle:commande:index }
+    defaults: { _controller: LOTicketBundle:Commande:index }
 
 lo_commande_form:
     path:     /commande
-    defaults: { _controller: LOTicketBundle:commande:add }
+    defaults: { _controller: LOTicketBundle:Commande:add }
 
 lo_ticket_form:
     path:     /ticket

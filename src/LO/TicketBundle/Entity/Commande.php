@@ -3,14 +3,15 @@
 namespace LO\TicketBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use LO\TicketBundle\Entity\Ticket as Ticket;
 
 /**
- * commande
+ * Commande
  *
  * @ORM\Table(name="commande")
- * @ORM\Entity(repositoryClass="LO\TicketBundle\Repository\commandeRepository")
+ * @ORM\Entity(repositoryClass="LO\TicketBundle\Repository\CommandeRepository")
  */
-class commande
+class Commande
 {
 
     /**
@@ -164,7 +165,7 @@ class commande
      *
      * @return Ticket
      */
-    public function setTicket(\LO\TicketBundle\Entity\Ticket $ticket = null)
+    public function setTicket(Ticket $ticket = null)
     {
         $this->ticket = $ticket;
 
