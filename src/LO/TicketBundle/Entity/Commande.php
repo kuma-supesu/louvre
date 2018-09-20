@@ -51,6 +51,10 @@ class Commande
      */
     private $ticket_number;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Ticket", mappedBy="commande", cascade={"persist", "remove"})
+     */
+    private $ticket;
 
     /**
      * Get id

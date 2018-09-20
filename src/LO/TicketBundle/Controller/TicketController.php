@@ -24,7 +24,10 @@ class TicketController extends Controller
         }
 
         $id = (int) $request->query->get('commandeId');
-        $em = $this->getDoctrine()->getManagerForClass(Ticket::class)->find(Commande::class, $id);
+
+        $commande = $this->getDoctrine()->getManager()->getRepository(Commande::class);
+
+        //$em = $this->getDoctrine()->getManagerForClass(Ticket::class)->find(Commande::class, $id);
 
         $ticket = new ticket();
 
