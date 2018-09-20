@@ -1,5 +1,6 @@
 <?php
 
+
 namespace LO\TicketBundle\Controller;
 use LO\TicketBundle\Entity\Commande;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,7 +16,6 @@ class CommandeController extends Controller
 
     public function indexAction()
     {
-        $em = $this->getDoctrine()->getManager()->getRepository(commande::class)->findBy('id');
         return $this->render('@LOTicket/Default/index.html.twig');
     }
 
