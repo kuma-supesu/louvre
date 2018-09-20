@@ -49,7 +49,9 @@ class TicketController extends Controller
                 $i++;
 
                 if ($i > $nbs) {
-                    return $this->redirectToRoute('lo_commande_homepage');
+
+                    $info = $this->getDoctrine()->getManagerForClass(Ticket::class)->find();
+                    return $this->render('@LOTicket/recapitulatif.html.twig', array());
                 }
                 else
                     return $this->redirectToRoute('lo_ticket_form', array('ticket_number' => $nbs,
@@ -58,7 +60,7 @@ class TicketController extends Controller
                     );
             }
         }
-    return $this->render('@LOTicket/add.html.twig', array(
+    return $this->render('@LOTicket/ticket.html.twig', array(
         'form' => $form->createView(),
         'currentForm' => $i
     ));
