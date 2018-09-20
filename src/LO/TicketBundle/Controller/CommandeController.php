@@ -1,5 +1,4 @@
 <?php
-
 namespace LO\TicketBundle\Controller;
 use LO\TicketBundle\Entity\Commande;
 use Symfony\Component\HttpFoundation\Request;

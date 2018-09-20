@@ -7,9 +7,8 @@ use LO\TicketBundle\Entity\Ticket as Ticket;
 
 /**
  * Commande
- *
+ * @ORM\Entity
  * @ORM\Table(name="commande")
- * @ORM\Entity(repositoryClass="LO\TicketBundle\Repository\CommandeRepository")
  */
 class Commande
 {

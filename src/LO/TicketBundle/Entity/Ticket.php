@@ -7,13 +7,11 @@ use LO\TicketBundle\Entity\Commande as Commande;
 
 /**
  * Ticket
- *
+ * @ORM\Entity
  * @ORM\Table(name="ticket")
- * @ORM\Entity(repositoryClass="LO\TicketBundle\Repository\TicketRepository")
  */
 class Ticket
 {
-
     /**
      * @ORM\ManyToOne(targetEntity="LO\TicketBundle\Entity\Commande")
      * @ORM\JoinColumn(nullable=true)

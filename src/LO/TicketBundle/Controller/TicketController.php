@@ -1,5 +1,4 @@
 <?php
-
 namespace LO\TicketBundle\Controller;
 use LO\TicketBundle\Entity\Ticket;
 use LO\TicketBundle\Entity\Commande;
@@ -13,10 +12,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class TicketController extends Controller
 {
-
     public function addAction(Request $request)
     {
-
         $nbs = (int) $request->query->get('ticket_number');
 
         if ($request->query->get('currentForm')){
@@ -25,9 +22,7 @@ class TicketController extends Controller
 
         $id = (int) $request->query->get('commandeId');
 
-        $commande = $this->getDoctrine()->getManager()->getRepository(Commande::class);
-
-        //$em = $this->getDoctrine()->getManagerForClass(Ticket::class)->find(Commande::class, $id);
+        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
 
         $ticket = new ticket();
 
@@ -41,7 +36,7 @@ class TicketController extends Controller
                 ->add('save',   SubmitType::class, array('label' => 'Create Task'))
                 ->getForm();
 
-        $ticket->setCommande($em);
+        $ticket->setCommande($commande);
 
         if ($request->isMethod('POST')) {
             $form->handleRequest($request);
@@ -57,8 +52,7 @@ class TicketController extends Controller
                 else
                     return $this->redirectToRoute('lo_ticket_form', array('ticket_number' => $nbs,
                             'currentForm' => $i, 'commandeId' => $id
-                        )
-                    );
+                        ));
             }
         }
     return $this->render('@LOTicket/add.html.twig', array(
