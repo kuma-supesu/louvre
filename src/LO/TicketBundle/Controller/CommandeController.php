@@ -50,4 +50,13 @@ class CommandeController extends Controller
                     'form' => $form->createView(),
                 ));
     }
+
+    public function recapAction(Request $request)
+    {
+        $id = (int) $request->query->get('commandeId');
+        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
+        return $this->render('@LOTicket/recap.html.twig', array('email' => $commande->getEmail(), 'code' => $commande->getBookingCode(), 'booking' =>$commande->getBooking(), 'ticket_number' => $commande->getTicketNumber(),
+                'ticket' => $commande->getTicket())
+        );
+    }
 }

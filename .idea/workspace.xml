@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Repository/CommandeRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Repository/TicketRepository.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recap.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Commande.php" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Commande.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Ticket.php" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Ticket.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,13 +18,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="TicketController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TicketController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+            <state relative-caret-position="770">
+              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="35" />
               <folding>
                 <element signature="e#44#78#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandeController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1855">
+              <caret line="53" column="4" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+              <folding>
+                <element signature="e#44#80#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,14 +75,15 @@
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/commandeController.php" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/commande.html.twig" />
         <option value="$USER_HOME$/Desktop/TicketController.php" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Entite.php" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Commande.php" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/entite.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/EntiteController.php" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Ticket.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Commande.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recap.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" />
       </list>
     </option>
   </component>
@@ -181,35 +192,19 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
-              <item name="louvre" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="LO" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="TicketBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
-              <item name="louvre" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="LO" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="TicketBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../symfony/cours" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -251,17 +246,20 @@
       <workItem from="1535443631760" duration="3255000" />
       <workItem from="1535563241912" duration="7397000" />
       <workItem from="1536703742694" duration="2754000" />
+      <workItem from="1537974631571" duration="8375000" />
+      <workItem from="1537988223784" duration="4199000" />
+      <workItem from="1538001526598" duration="3954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61460000" />
+    <option name="totallyTimeSpent" value="77988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2136" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17109375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -270,22 +268,14 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,21 +286,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="41" column="57" lean-forward="false" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
-          <folding>
-            <element signature="e#44#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Entity/Ticket.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1225">
@@ -323,7 +303,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5390">
           <caret line="154" column="37" lean-forward="false" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#42#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -331,7 +313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -375,7 +356,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5390">
           <caret line="154" column="37" lean-forward="false" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#42#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -383,7 +366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -427,7 +409,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="10" column="79" lean-forward="false" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-          <folding />
+          <folding>
+            <element signature="e#42#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -442,7 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -486,7 +469,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="10" column="79" lean-forward="false" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-          <folding />
+          <folding>
+            <element signature="e#42#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,7 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -554,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -562,7 +545,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="10" column="79" lean-forward="true" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-          <folding />
+          <folding>
+            <element signature="e#42#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -584,30 +569,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/IndexController.php" />
     <entry file="file://$USER_HOME$/Desktop/TicketController.php" />
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Repository/TicketRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing/ticket.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Repository/TicketRepository.php" />
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing/ticket.yml" />
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Query/QueryBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1530010195178" expanded="true" signature="34024:34217" ph="INSERT INTO ${$this-&gt;sqlParts['from']['table']}... " />
-            <marker date="1530010195178" expanded="true" signature="35047:35059" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,85 +582,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5775">
           <caret line="32" column="2" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/EntiteController.php" />
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/entite.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Entity/Entite.php" />
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Repository/CommandeRepository.php" />
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="14" column="58" lean-forward="false" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/commande.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/EntiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/entite.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Entity/Entite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Repository/CommandeRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Entity/Ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#42#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Entity/Commande.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#42#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="9" selection-end-column="58" />
-          <folding>
-            <element signature="e#44#80#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -701,24 +600,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="2" column="70" lean-forward="false" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/commande.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Entity/Ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/add.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Entity/Commande.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        <state relative-caret-position="-15">
+          <caret line="137" column="28" lean-forward="false" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+          <folding>
+            <element signature="e#42#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recap.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+        <state relative-caret-position="770">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="35" />
           <folding>
             <element signature="e#44#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1855">
+          <caret line="53" column="4" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -47,7 +47,8 @@ class TicketController extends Controller
                 $i++;
 
                 if ($i > $nbs) {
-                    return $this->redirectToRoute('lo_commande_homepage');
+                    return $this->redirectToRoute('lo_commande_recap',array('commandeId' => $id)
+                    );
                 }
                 else
                     return $this->redirectToRoute('lo_ticket_form', array('ticket_number' => $nbs,

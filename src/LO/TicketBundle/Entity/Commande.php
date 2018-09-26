@@ -4,6 +4,7 @@ namespace LO\TicketBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use LO\TicketBundle\Entity\Ticket as Ticket;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Commande
@@ -23,9 +24,9 @@ class Commande
     private $id;
 
     /**
-     * @var \DateTime
+     *  @Assert\DateTime()
      *
-     * @ORM\Column(name="booking", type="date")
+     * @ORM\Column(name="booking", type="datetime")
      */
     private $booking;
 
@@ -68,7 +69,7 @@ class Commande
     /**
      * Set booking
      *
-     * @param \DateTime $booking
+     * @param Assert\DateTime $booking
      *
      * @return commande
      */
@@ -82,7 +83,7 @@ class Commande
     /**
      * Get booking
      *
-     * @return \DateTime
+     * @return Assert\DateTime
      */
     public function getBooking()
     {
