@@ -2,3 +2,7 @@
 {{ form_widget(form) }}
 <input type="hidden" value="1" name="currentForm">
 {{ form_end(form) }}
+
+{% for error in errors %}
+    <p>{{ error }}</p>
+{% endfor %}
