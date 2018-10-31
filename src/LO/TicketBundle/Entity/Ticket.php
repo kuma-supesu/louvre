@@ -4,7 +4,6 @@ namespace LO\TicketBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use LO\TicketBundle\Entity\Commande as Commande;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Ticket
@@ -32,11 +31,6 @@ class Ticket
      * @var string
      *
      * @ORM\Column(name="f_name", type="string", length=255)
-     *
-     * @Assert\Length(
-     *      max = 50,
-     *      maxMessage = "Your first name cannot be longer than {{ limit }} characters"
-     * )
      */
     private $fname;
 
@@ -48,7 +42,7 @@ class Ticket
     private $lname;
 
     /**
-     * @var \Date
+     * @var \DateTime
      *
      * @ORM\Column(name="birthday", type="date")
      */
@@ -67,6 +61,13 @@ class Ticket
      * @ORM\Column(name="reduc", type="boolean")
      */
     private $reduc;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="day", type="boolean")
+     */
+    private $day;
 
     /**
      * Get id
@@ -130,7 +131,7 @@ class Ticket
     /**
      * Set birthday
      *
-     * @param \Date $birthday
+     * @param \DateTime $birthday
      *
      * @return Ticket
      */
@@ -144,7 +145,7 @@ class Ticket
     /**
      * Get birthday
      *
-     * @return \Date
+     * @return \DateTime
      */
     public function getBirthday()
     {
@@ -197,6 +198,30 @@ class Ticket
     public function getReduc()
     {
         return $this->reduc;
+    }
+
+    /**
+     * Set day
+     *
+     * @param boolean $day
+     *
+     * @return Ticket
+     */
+    public function setDay($day)
+    {
+        $this->day = $day;
+
+        return $this;
+    }
+
+    /**
+     * Get day
+     *
+     * @return boolean
+     */
+    public function getDay()
+    {
+        return $this->day;
     }
 
     /**

@@ -27,13 +27,15 @@ class TicketController extends Controller
         $ticket = new ticket();
 
             $form = $this->createFormBuilder($ticket)
-                ->add('fname',  TextType::class, array('label' => 'Prénom'))
-                ->add('lname',  TextType::class, array('label' => 'Nom'))
-                ->add('birthday',   DateType::class, array('label' => 'Date de naissance', 'years' => range(date('Y'),1902) ,'format' => 'dd-MM-yyyy', 'placeholder' => array('month' => date(''),'day' =>date(''))))
-                ->add('country',    CountryType::class, array('label' => 'Pays', 'placeholder' => 'Votre pays'))
-                ->add('reduc',  CheckboxType::class, array('label' => 'Réduction', 'required' => false))
-                ->add('save',   SubmitType::class, array('label' => 'Valider'))
+                ->add('fname',  TextType::class)
+                ->add('lname',  TextType::class)
+                ->add('birthday',   DateType::class, array('widget' => 'single_text', 'format' => 'yyyy-MM-dd'))
+                ->add('country',    CountryType::class)
+                ->add('reduc',  CheckboxType::class, array('required' => false))
+                ->add('day',    CheckboxType::class, array('required' => false))
+                ->add('save',   SubmitType::class, array('label' => 'Create Task'))
                 ->getForm();
+
         $ticket->setCommande($commande);
 
         if ($request->isMethod('POST')) {
