@@ -24,9 +24,9 @@ class Commande
     private $id;
 
     /**
-     *  @Assert\DateTime()
+     *  @Assert\Date()
      *
-     * @ORM\Column(name="booking", type="datetime")
+     * @ORM\Column(name="booking", type="date")
      */
     private $booking;
 
@@ -41,8 +41,20 @@ class Commande
      * @var \string
      *
      * @ORM\Column(name="email", type="string")
+     *
+     * @Assert\Email(
+     *     message = "Cet Email '{{ value }}' n'est pas valide.",
+     *     checkMX = true
+     * )
      */
     private $email;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="day", type="boolean")
+     */
+    private $day;
 
     /**
      * @var \int
@@ -69,7 +81,7 @@ class Commande
     /**
      * Set booking
      *
-     * @param Assert\DateTime $booking
+     * @param Assert\Date $booking
      *
      * @return commande
      */
@@ -83,7 +95,7 @@ class Commande
     /**
      * Get booking
      *
-     * @return Assert\DateTime
+     * @return Assert\Date
      */
     public function getBooking()
     {
@@ -136,6 +148,30 @@ class Commande
     public function getEmail()
     {
         return $this->email;
+    }
+
+    /**
+     * Set day
+     *
+     * @param boolean $day
+     *
+     * @return Ticket
+     */
+    public function setDay($day)
+    {
+        $this->day = $day;
+
+        return $this;
+    }
+
+    /**
+     * Get day
+     *
+     * @return boolean
+     */
+    public function getDay()
+    {
+        return $this->day;
     }
 
     /**
