@@ -1,5 +1,7 @@
 <?php
+
 namespace LO\TicketBundle\Controller;
+
 use LO\TicketBundle\Entity\Ticket;
 use LO\TicketBundle\Entity\Commande;
 use LO\TicketBundle\Form\Type\TicketType;

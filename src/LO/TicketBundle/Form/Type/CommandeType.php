@@ -4,7 +4,7 @@ namespace LO\TicketBundle\Form\Type;
 
 use LO\TicketBundle\Entity\Commande;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
@@ -20,7 +20,7 @@ class CommandeType extends AbstractType
         $builder
             ->add('booking', DateType::class, array('label' => 'Date de réservation', 'years' => range(date('Y'), 2100),'format' => 'dd-MM-yyyy', 'placeholder' => array('month' => date(' '),'day' =>date(' '))))
             ->add('booking_code', HiddenType::class)
-            ->add('email', TextType::class, array('label' => 'Votre E-mail', 'required' => true))
+            ->add('email', RepeatedType::class, array('required' => true, 'first_options'  => array('label' => 'Entrez votre Email'), 'second_options' => array('label' => 'Vérification de votre Email'), 'invalid_message' => 'Les Emails ne correspondent pas.'))
             ->add('day',    CheckboxType::class, array('label' => 'Tarif demi journée', 'required' => false))
             ->add('ticket_number', IntegerType::class, array('label' => 'Nombre de ticket', 'required' => true))
             ->add('save', SubmitType::class, array('label' => 'Suivant'))

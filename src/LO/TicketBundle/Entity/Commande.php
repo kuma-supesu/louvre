@@ -5,6 +5,7 @@ namespace LO\TicketBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use LO\TicketBundle\Entity\Ticket as Ticket;
 use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Commande
@@ -42,10 +43,6 @@ class Commande
      *
      * @ORM\Column(name="email", type="string")
      *
-     * @Assert\Email(
-     *     message = "Cet Email '{{ value }}' n'est pas valide.",
-     *     checkMX = true
-     * )
      */
     private $email;
 
@@ -67,6 +64,11 @@ class Commande
      * @ORM\OneToMany(targetEntity="Ticket", mappedBy="commande", cascade={"persist", "remove"})
      */
     private $ticket;
+
+    public function __construct()
+    {
+        $this->ticket = new ArrayCollection();
+    }
 
     /**
      * Get id

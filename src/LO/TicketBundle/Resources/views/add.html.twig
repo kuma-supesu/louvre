@@ -16,10 +16,14 @@
             <div class="form-group">
             <h1>Ticket</h1>
                 <div class="form-group row">
-                {{ form_start(form) }}
-                {{ form_widget(form) }}
-                <input type="hidden" value="{{ currentForm }}" name="currentForm">
-                {{ form_end(form) }}
+
+
+                        {{ form_start(form) }}
+                        {{ form_widget(form) }}
+                        <input type="hidden" value="{{ currentForm }}" name="currentForm">
+                        {{ form_end(form) }}
+
+
                 </div>
             </div>
         </div>
