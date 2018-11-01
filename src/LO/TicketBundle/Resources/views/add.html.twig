@@ -20,7 +20,6 @@
                 {{ form_widget(form) }}
                 <input type="hidden" value="{{ currentForm }}" name="currentForm">
                 {{ form_end(form) }}
-            <p>gfetgbetgetg</p>
                 </div>
             </div>
         </div>
@@ -32,10 +31,10 @@
 <script src="{{ asset('js/jquery.js') }}"></script>
 
     <script>
-        $('#form_reduc').bind('click', function () {
-            $('#message_reduc').hide();
+        $('#form_reduc').click(function () {
+            $('#message_reduc').remove();
             if ($(this).prop('checked')) {
-                $(this).after('<p id="message_reduc">Réduction</p>')
+                $(this).after('<p id="message_reduc">Il sera nécessaire de présenter sa carte d\'étudiant, militaire ou équivalent à l\'entrée du musée.</p>')
             }
         })
 

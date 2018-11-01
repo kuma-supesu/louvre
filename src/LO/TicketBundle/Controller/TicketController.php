@@ -2,11 +2,7 @@
 namespace LO\TicketBundle\Controller;
 use LO\TicketBundle\Entity\Ticket;
 use LO\TicketBundle\Entity\Commande;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\CountryType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use LO\TicketBundle\Form\Type\TicketType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -23,18 +19,9 @@ class TicketController extends Controller
         $id = (int) $request->query->get('commandeId');
 
         $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
-
         $ticket = new ticket();
-
-            $form = $this->createFormBuilder($ticket)
-                ->add('fname',  TextType::class, array('label' => 'Prénom'))
-                ->add('lname',  TextType::class, array('label' => 'Nom'))
-                ->add('birthday',   DateType::class, array('label' => 'Date de naissance', 'years' => range(date('Y'),1902) ,'format' => 'dd-MM-yyyy', 'placeholder' => array('month' => date(''),'day' =>date(''))))
-                ->add('country',    CountryType::class, array('label' => 'Pays', 'placeholder' => 'Votre pays'))
-                ->add('reduc',  CheckboxType::class, array('label' => 'Réduction', 'required' => false))
-                ->add('save',   SubmitType::class, array('label' => 'Valider'))
-                ->getForm();
         $ticket->setCommande($commande);
+        $form = $this->createForm(TicketType::class, $ticket);
 
         if ($request->isMethod('POST')) {
             $form->handleRequest($request);

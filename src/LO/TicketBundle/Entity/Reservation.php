@@ -31,9 +31,9 @@ class Reservation
     /**
      * @var \int
      *
-     * @ORM\Column(name="tbillet", type="integer")
+     * @ORM\Column(name="totalTicket", type="integer")
      */
-    private $tbillet;
+    private $totalTicket;
 
     /**
      * Get id
@@ -70,26 +70,26 @@ class Reservation
     }
 
     /**
-     * Set tbillet
+     * Set totalTicket
      *
-     * @param integer $tbillet
+     * @param integer $totalTicket
      *
      * @return reservation
      */
-    public function setTbillet($tbillet)
+    public function setTotalTicket($totalTicket)
     {
-        $this->tbillet = $tbillet;
+        $this->totalTicket = $totalTicket;
 
         return $this;
     }
 
     /**
-     * Get tbillet
+     * Get totalTicket
      *
      * @return integer
      */
-    public function getTbillet()
+    public function getTotalTicket()
     {
-        return $this->tbillet;
+        return $this->totalTicket;
     }
 }
