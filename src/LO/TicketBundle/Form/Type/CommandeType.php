@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -23,6 +24,9 @@ class CommandeType extends AbstractType
             ->add('email', RepeatedType::class, array('required' => true, 'first_options'  => array('label' => 'Entrez votre Email'), 'second_options' => array('label' => 'Vérification de votre Email'), 'invalid_message' => 'Les Emails ne correspondent pas.'))
             ->add('day',    CheckboxType::class, array('label' => 'Tarif demi journée', 'required' => false))
             ->add('ticket_number', IntegerType::class, array('label' => 'Nombre de ticket', 'required' => true))
+            ->add('tickets', CollectionType::class, array(
+                'entry_type' => TicketType::class, 'label' => false
+            ))
             ->add('save', SubmitType::class, array('label' => 'Suivant'))
             ->getForm();
     }

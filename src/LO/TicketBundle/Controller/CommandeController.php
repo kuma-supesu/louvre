@@ -41,8 +41,7 @@ class CommandeController extends Controller
                     $em->persist($commande);
                     $em->flush();
 
-                    return $this->redirectToRoute('lo_ticket_form', array('ticket_number' => $commande->getTicketNumber(),
-                            'currentForm' => 1, 'commandeId' =>  $commande->getId()
+                    return $this->redirectToRoute('lo_ticket_form', array('commandeId' =>  $commande->getId()
                         )
                     );
                 }
@@ -58,8 +57,7 @@ class CommandeController extends Controller
     {
         $id = (int) $request->query->get('commandeId');
         $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
-        return $this->render('@LOTicket/recap.html.twig', array('email' => $commande->getEmail(), 'code' => $commande->getBookingCode(), 'booking' =>$commande->getBooking(), 'ticket_number' => $commande->getTicketNumber(),
-                'ticket' => $commande->getTicket())
+        return $this->render('@LOTicket/recap.html.twig', array()
         );
     }
 

@@ -4,7 +4,7 @@ namespace LO\TicketBundle\Controller;
 
 use LO\TicketBundle\Entity\Ticket;
 use LO\TicketBundle\Entity\Commande;
-use LO\TicketBundle\Form\Type\TicketType;
+use LO\TicketBundle\Form\Type\CommandeType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -12,18 +12,13 @@ class TicketController extends Controller
 {
     public function addAction(Request $request)
     {
-        $nbs = (int) $request->query->get('ticket_number');
-
-        if ($request->query->get('currentForm')){
-            $i = (int) $request->query->get('currentForm');
+        $id = (int) $request->query->get('commandeId');
+        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
+        for ($i = 0; $i < $commande->getTicketNumber(); $i++) {
+            $commande->addTicket(new ticket());
         }
 
-        $id = (int) $request->query->get('commandeId');
-
-        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
-        $ticket = new ticket();
-        $ticket->setCommande($commande);
-        $form = $this->createForm(TicketType::class, $ticket);
+        $form = $this->createForm(CommandeType::class, $commande);
 
         if ($request->isMethod('POST')) {
             $form->handleRequest($request);
@@ -31,16 +26,8 @@ class TicketController extends Controller
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($ticket);
                 $em->flush();
-                $i++;
 
-                if ($i > $nbs) {
-                    return $this->redirectToRoute('lo_commande_recap',array('commandeId' => $id)
-                    );
-                }
-                else
-                    return $this->redirectToRoute('lo_ticket_form', array('ticket_number' => $nbs,
-                            'currentForm' => $i, 'commandeId' => $id
-                        ));
+                    return $this->redirectToRoute('lo_commande_recap',array('commandeId' => $id));
             }
         }
     return $this->render('@LOTicket/add.html.twig', array(

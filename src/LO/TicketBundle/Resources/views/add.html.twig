@@ -1,47 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Louvre</title>
 </head>
-
 <body>
 <div class="container">
+    <h1>Ticket</h1>
     <div class="row align-items-center">
-        <div class="col">
+                        {% for ticket in form.tickets %}
+                            <ul class="tags col-sm" id="form">
+                                <br>
+                                    {{ form_row(ticket.fname) }}
+                                    {{ form_row(ticket.lname) }}
+                                    {{ form_row(ticket.birthday) }}
+                                    {{ form_row(ticket.country) }}
+                                    {{ form_row(ticket.reduc) }}
+                                    {{ form_row(ticket.save) }}
+                                <hr>
+                             </ul>
+                        {% endfor %}
         </div>
-        <div class="col mt-5">
-            <div class="form-group">
-            <h1>Ticket</h1>
-                <div class="form-group row">
-
-
-                        {{ form_start(form) }}
-                        {{ form_widget(form) }}
-                        <input type="hidden" value="{{ currentForm }}" name="currentForm">
-                        {{ form_end(form) }}
-
-
-                </div>
-            </div>
-        </div>
-        <div class="col">
-        </div>
-    </div>
 </div>
-
 <script src="{{ asset('js/jquery.js') }}"></script>
-
-    <script>
-        $('#form_reduc').click(function () {
-            $('#message_reduc').remove();
-            if ($(this).prop('checked')) {
-                $(this).after('<p id="message_reduc">Il sera nécessaire de présenter sa carte d\'étudiant, militaire ou équivalent à l\'entrée du musée.</p>')
-            }
-        })
-
-    </script>
+<script src="{{ asset('js/ticket.js') }}"></script>
 </body>
 </html>

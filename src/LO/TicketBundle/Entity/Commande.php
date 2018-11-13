@@ -63,11 +63,11 @@ class Commande
     /**
      * @ORM\OneToMany(targetEntity="Ticket", mappedBy="commande", cascade={"persist", "remove"})
      */
-    private $ticket;
+    private $tickets;
 
     public function __construct()
     {
-        $this->ticket = new ArrayCollection();
+        $this->tickets = new ArrayCollection();
     }
 
     /**
@@ -207,10 +207,14 @@ class Commande
      *
      * @return Ticket
      */
-    public function setTicket(Ticket $ticket = null)
+    public function addTicket(Ticket $ticket = null)
     {
-        $this->ticket = $ticket;
+        if ($this->tickets->contains($ticket)) {
+            return $this;
+        }
 
+        $this->tickets->add($ticket);
+        $ticket->setCommande($this);
         return $this;
     }
 
@@ -219,8 +223,11 @@ class Commande
      *
      * @return \LO\TicketBundle\Entity\Ticket
      */
-    public function getTicket()
+    public function getTickets()
     {
-        return $this->ticket;
+        if ($this->tickets->isEmpty()) {
+        return [];
+    }
+        return $this->tickets->toArray();
     }
 }

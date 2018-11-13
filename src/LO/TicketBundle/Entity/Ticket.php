@@ -14,9 +14,9 @@ use Symfony\Component\Validator\Constraints as Assert;
 class Ticket
 {
     /**
-     * @ORM\ManyToOne(targetEntity="LO\TicketBundle\Entity\Commande")
+     * @ORM\ManyToOne(targetEntity="Commande", inversedBy="ticket", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=true)
-*/
+    */
     private $commande;
 
     /**
@@ -42,6 +42,11 @@ class Ticket
 
     /**
      * @var string
+     *
+     * @Assert\Length(
+     *      max = 50,
+     *      maxMessage = "Your first name cannot be longer than {{ limit }} characters"
+     * )
      *
      * @ORM\Column(name="l_name", type="string", length=255)
      */
