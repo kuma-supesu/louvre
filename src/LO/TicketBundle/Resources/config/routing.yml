@@ -10,6 +10,10 @@ lo_ticket_form:
     path:     /ticket
     defaults: { _controller: LOTicketBundle:Ticket:add }
 
-lo_commande_recap:
+lo_commande_panier:
+    path:     /commande/panier
+    defaults: { _controller: LOTicketBundle:Commande:panier }
+
+lo_commande_recapitulatif:
     path:     /commande/recapitulatif
-    defaults: { _controller: LOTicketBundle:Commande:recap }
+    defaults: { _controller: LOTicketBundle:Commande:recapitulatif }

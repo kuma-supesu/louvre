@@ -8,6 +8,12 @@
 <div class="container">
     <h1>Ticket</h1>
     <div class="row align-items-center">
+        <form method="post">
+            {% do form.booking.setRendered() %}
+            {% do form.email.setRendered() %}
+            {% do form.day.setRendered() %}
+            {% do form.ticket_number.setRendered() %}
+            {{ form_row(form.booking_code) }}
                         {% for ticket in form.tickets %}
                             <ul class="tags col-sm" id="form">
                                 <br>
@@ -16,10 +22,13 @@
                                     {{ form_row(ticket.birthday) }}
                                     {{ form_row(ticket.country) }}
                                     {{ form_row(ticket.reduc) }}
-                                    {{ form_row(ticket.save) }}
+                                    {{ form_row(form._token) }}
                                 <hr>
                              </ul>
                         {% endfor %}
+        <button type="submit" id="commande_save" name="commande[save]">Valider</button>
+        </form>
+
         </div>
 </div>
 <script src="{{ asset('js/jquery.js') }}"></script>

@@ -1,0 +1,29 @@
+
+<li>{{ commande.getTicketNumber() }} Ticket(s)</li>
+<li>Réservé pour le : {{ commande.getBookingISO8601()}}</li>
+<li>{{ commande.getDay() }}</li>
+<li>Votre E-mail : {{ commande.getEmail() }}</li>
+    {% for detail_ticket in commande.getTickets() %}
+        <ul class="tags col-sm" id="form">
+            <li>{{ detail_ticket.getFname() }}</li>
+            <li>{{ detail_ticket.getLname() }}</li>
+            <li>{{ detail_ticket.getBirthdayISO8601() }}</li>
+            <li>{{ detail_ticket.getCountry() }}</li>
+            <li>{{ detail_ticket.getReduc() }}</li>
+        </ul>
+    {% endfor %}
+<h3>Total</h3>
+€
+{% set cout = 1000 %}
+<form action="" method="POST">
+    <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_PslFJhREczoU1acpGw8s6VKR"
+            data-amount="{{ cout }}"
+            data-name="Louvre"
+            data-description="Achat ticket(s)"
+            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+            data-locale="auto"
+            data-currency="eur">
+    </script>
+</form>

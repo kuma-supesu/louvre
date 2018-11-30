@@ -2,7 +2,10 @@
 namespace LO\TicketBundle\Controller;
 
 use LO\TicketBundle\Entity\Commande;
+use LO\TicketBundle\Entity\Prix;
 use LO\TicketBundle\Entity\Reservation;
+use LO\TicketBundle\Entity\Ticket;
+use LO\TicketBundle\LOTicketBundle;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use LO\TicketBundle\Form\Type\CommandeType;
@@ -53,12 +56,47 @@ class CommandeController extends Controller
                 ));
     }
 
-    public function recapAction(Request $request)
+    public function panierAction(Request $request)
     {
         $id = (int) $request->query->get('commandeId');
         $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
-        return $this->render('@LOTicket/recap.html.twig', array()
+        //$this->calculTickets($commande);
+        $cout = 0;
+        $tickets = $commande->getTickets();
+        for ($i = 0; $i === $commande->getTicketNumber(); $i++){
+            $birthday = $tickets->getBirthdayISO8601();
+            $age = $birthday->diff(new \DateTime())->format('%Y');
+            switch ($age){
+                case $age < 4 :
+                    $cout += 0 ;
+                    break;
+                case $age > 4 && $age < 12 :
+                    $cout += 8 ;
+                    break;
+                case $age > 12 && $age < 60 :
+                    $cout += 16 ;
+                    break;
+                case $age > 60 :
+                    $cout += 12 ;
+                    break;
+            }
+        }
+         dump($cout,$tickets);
+        return $this->render('@LOTicket/panier.html.twig', array('commande' => $commande)
         );
+    }
+
+    public function recapitulatifAction(Request $request)
+    {
+        $id = (int) $request->query->get('commandeId');
+        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
+        return $this->render('@LOTicket/recapitulatif.html.twig', array('commande' => $commande)
+        );
+    }
+
+    private function calculTickets($commande)
+    {
+
     }
 
     private function isAvailableTicketByDate($commande)

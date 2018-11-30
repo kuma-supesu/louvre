@@ -14,7 +14,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 class Ticket
 {
     /**
-     * @ORM\ManyToOne(targetEntity="Commande", inversedBy="ticket", cascade={"persist", "remove"})
+     * @ORM\ManyToOne(targetEntity="Commande", inversedBy="ticket")
      * @ORM\JoinColumn(nullable=true)
     */
     private $commande;
@@ -31,6 +31,11 @@ class Ticket
     /**
      * @var string
      *
+     *@Assert\Type(
+     *     type="alpha",
+     *     message="The value {{ value }} is not a valid {{ type }}."
+     * )
+     *
      * @ORM\Column(name="f_name", type="string", length=255)
      *
      * @Assert\Length(
@@ -43,6 +48,11 @@ class Ticket
     /**
      * @var string
      *
+     *@Assert\Type(
+     *     type="alpha",
+     *     message="The value {{ value }} is not a valid {{ type }}."
+     * )
+     *
      * @Assert\Length(
      *      max = 50,
      *      maxMessage = "Your first name cannot be longer than {{ limit }} characters"
@@ -54,6 +64,8 @@ class Ticket
 
     /**
      * @var \Date
+     *
+     * @Assert\Date()
      *
      * @ORM\Column(name="birthday", type="date")
      */
@@ -154,6 +166,16 @@ class Ticket
     public function getBirthday()
     {
         return $this->birthday;
+    }
+
+    /**
+     * Get birthday
+     *
+     * @return \Date
+     */
+    public function getBirthdayISO8601()
+    {
+        return $this->birthday->format('d-m-Y');
     }
 
     /**

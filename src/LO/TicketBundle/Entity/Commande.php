@@ -97,11 +97,22 @@ class Commande
     /**
      * Get booking
      *
-     * @return Assert\Date
+     * @return Assert\DateTime
      */
     public function getBooking()
     {
         return $this->booking;
+
+    }
+
+    /**
+     * Get booking
+     *
+     * @return Assert\string
+     */
+    public function getBookingISO8601()
+    {
+        return $this->booking->format('d-m-Y');
     }
 
     /**
@@ -210,11 +221,11 @@ class Commande
     public function addTicket(Ticket $ticket = null)
     {
         if ($this->tickets->contains($ticket)) {
-            return $this;
+            $this->tickets->add($ticket);
         }
 
-        $this->tickets->add($ticket);
         $ticket->setCommande($this);
+        $this->tickets->add($ticket);
         return $this;
     }
 
