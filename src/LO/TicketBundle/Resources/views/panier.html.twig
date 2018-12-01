@@ -13,8 +13,11 @@
         </ul>
     {% endfor %}
 <h3>Total</h3>
-€
-{% set cout = 1000 %}
+{% if day == true %} {% set cout = cout / 2 %}{{ cout / 100 }}€
+{% else %}
+{{ cout / 100 }}€
+{%  endif %}
+
 <form action="" method="POST">
     <script
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"

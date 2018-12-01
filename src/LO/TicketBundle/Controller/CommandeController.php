@@ -1,6 +1,7 @@
 <?php
 namespace LO\TicketBundle\Controller;
 
+use http\Env\Response;
 use LO\TicketBundle\Entity\Commande;
 use LO\TicketBundle\Entity\Prix;
 use LO\TicketBundle\Entity\Reservation;
@@ -58,31 +59,34 @@ class CommandeController extends Controller
 
     public function panierAction(Request $request)
     {
-        $id = (int) $request->query->get('commandeId');
-        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
-        //$this->calculTickets($commande);
         $cout = 0;
-        $tickets = $commande->getTickets();
-        for ($i = 0; $i === $commande->getTicketNumber(); $i++){
-            $birthday = $tickets->getBirthdayISO8601();
-            $age = $birthday->diff(new \DateTime())->format('%Y');
-            switch ($age){
-                case $age < 4 :
-                    $cout += 0 ;
-                    break;
-                case $age > 4 && $age < 12 :
-                    $cout += 8 ;
-                    break;
-                case $age > 12 && $age < 60 :
-                    $cout += 16 ;
-                    break;
-                case $age > 60 :
-                    $cout += 12 ;
-                    break;
+        $id = (int) $request->query->get('commandeId');
+        $commande = $this->getDoctrine()->getRepository(commande::class)->find($id);
+        $tickets = $this->getDoctrine()->getRepository(ticket::class)->findBy(array('commande' => $commande));
+
+        foreach($tickets as $ticket){
+            $birthday = $ticket->getBirthday();
+            $year = $birthday->format('Y');
+            $now = new \DateTime();
+            $today = $now->format('Y');
+            $age = $today - $year;
+            if ( $ticket->getReduc() === true){
+                $cout+= 1000;
+            }
+            if ($age < 4) {
+                $cout += 0 ;
+            }
+            if ($age >= 4 && $age < 12 && $ticket->getReduc() === false) {
+                $cout += 800 ;
+            }
+            if ($age >= 12 && $age < 60 && $ticket->getReduc() === false) {
+                $cout += 1600 ;
+            }
+            if ($age >= 60 && $ticket->getReduc() === false) {
+                $cout += 1200 ;
             }
         }
-         dump($cout,$tickets);
-        return $this->render('@LOTicket/panier.html.twig', array('commande' => $commande)
+        return $this->render('@LOTicket/panier.html.twig', array('commande' => $commande, 'cout' => $cout, 'day' => $commande->getDay())
         );
     }
 
@@ -92,11 +96,6 @@ class CommandeController extends Controller
         $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
         return $this->render('@LOTicket/recapitulatif.html.twig', array('commande' => $commande)
         );
-    }
-
-    private function calculTickets($commande)
-    {
-
     }
 
     private function isAvailableTicketByDate($commande)
