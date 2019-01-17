@@ -1,0 +1,76 @@
+h1 {
+    font-weight: 700;
+}
+p {
+    font-weight: 300;
+    font-size: 20px;
+    text-justify: distribute;
+}
+a {
+    color: black;
+}
+/* Class */
+.mt-50 {
+    margin-top: 15%;
+}
+.font20 {
+    font-size: 20px;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    background: #5288b9;
+    border-radius: 2px;
+    border: 0px solid #444;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    width:100%;
+}
+.btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #4a5754));
+    background: -moz-linear-gradient(top, #6c7c7c 5%, #4a5754 100%);
+    background: -webkit-linear-gradient(top, #6c7c7c 5%, #4a5754 100%);
+    background: -o-linear-gradient(top, #6c7c7c 5%, #4a5754 100%);
+    background :-ms-linear-gradient(top, #6c7c7c 5%, #4a5754 100%);
+    background: linear-gradient(to bottom, #6c7c7c 5%, #4a5754 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#4a5754',GradientType=0);
+    background-color: #6c7c7c;
+}
+.btn_cart {
+    position: relative;
+    cursor: pointer;
+    background: #5288b9;
+    border-radius: 2px;
+    border: 0px solid #444;
+    padding: 10px 49px 10px 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn_cart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #4a5754));
+    background: -moz-linear-gradient(top, #6c7c7c 5%, #4a5754 100%);
+    background: -webkit-linear-gradient(top, #6c7c7c 5%, #4a5754 100%);
+    background: -o-linear-gradient(top, #6c7c7c 5%, #4a5754 100%);
+    background: -ms-linear-gradient(top, #6c7c7c 5%, #4a5754 100%);
+    background: linear-gradient(to bottom, #6c7c7c 5%, #4a5754 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#4a5754',GradientType=0);
+    background-color: #6c7c7c;
+}
+.btn_cart > div {
+    background: #33adf9;
+    border: 0px solid #ffffff;
+    border-left-width: 2px;
+    padding: 14px 8px 14px 8px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 40px
+}
+/* Id */
+#wrapper {
+    margin-top: 5%;
+}

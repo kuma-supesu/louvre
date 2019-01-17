@@ -1,0 +1,36 @@
+{% extends "@LOTicket/layout.twig" %}
+{% if commande.day == true %}{% set msg_hr = '14h00' %}
+{% else %}
+    {% set msg_hr= '10h00' %}
+{%  endif %}
+
+{% if commande.reduc == true %}{% set msg_reduc = 'n\'oubliez d\'apporter votre carte d\'étudiant, militaire ou équivalent à l\'entrée du musée.' %}
+{% else %}
+    {% set msg_reduc = '' %}
+{%  endif %}
+
+{% if commande.day == true %}{% set msg_day = 'Tarif demie-journée' %}
+{% else %}
+    {% set msg_day = 'Tarif journée' %}
+{%  endif %}
+{% block body %}
+<h3>Bravo! Vous avez réservé!</h3>
+
+Réservation réussie pour le {{ commande.bookingISO8601}} à partir de {{ msg_hr }}.<br/>
+Numéro de commande : ML{{ commande.bookingCode }}.<br/>
+{{ msg_day }}
+    {% for ticket in commande.tickets %}
+        <ul class="tags col-sm" id="form">
+            <li>{{ ticket.fName }}</li>
+            <li>{{ ticket.lName }}</li>
+            <li>{{ ticket.birthdayISO8601 }}</li>
+            <li>{{ ticket.tarif }}€</li>
+            <li>Tarif : {{ ticket.typetarif }}</li>
+        </ul>
+    {% endfor %}
+
+{{ msg_reduc }}<br/>
+
+Nous vous remercions pour votre achat.<br/>
+<img src="{{ absolute_url(asset('images/logo.png')) }}">
+{% endblock %}

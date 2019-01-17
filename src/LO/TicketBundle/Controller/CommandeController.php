@@ -1,24 +1,13 @@
 <?php
 namespace LO\TicketBundle\Controller;
-
-use http\Env\Response;
 use LO\TicketBundle\Entity\Commande;
-use LO\TicketBundle\Entity\Prix;
 use LO\TicketBundle\Entity\Reservation;
-use LO\TicketBundle\Entity\Ticket;
-use LO\TicketBundle\LOTicketBundle;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use LO\TicketBundle\Form\Type\CommandeType;
 
 class CommandeController extends Controller
 {
-
-    public function indexAction()
-    {
-        return $this->render('@LOTicket/Default/index.html.twig');
-    }
-
     public function addAction(Request $request)
     {
         $errors = [];
@@ -59,41 +48,17 @@ class CommandeController extends Controller
 
     public function panierAction(Request $request)
     {
-        $cout = 0;
         $id = (int) $request->query->get('commandeId');
         $commande = $this->getDoctrine()->getRepository(commande::class)->find($id);
-        $tickets = $this->getDoctrine()->getRepository(ticket::class)->findBy(array('commande' => $commande));
-
-        foreach($tickets as $ticket){
-            $birthday = $ticket->getBirthday();
-            $year = $birthday->format('Y');
-            $now = new \DateTime();
-            $today = $now->format('Y');
-            $age = $today - $year;
-            if ( $ticket->getReduc() === true){
-                $cout+= 1000;
-            }
-            if ($age < 4) {
-                $cout += 0 ;
-            }
-            if ($age >= 4 && $age < 12 && $ticket->getReduc() === false) {
-                $cout += 800 ;
-            }
-            if ($age >= 12 && $age < 60 && $ticket->getReduc() === false) {
-                $cout += 1600 ;
-            }
-            if ($age >= 60 && $ticket->getReduc() === false) {
-                $cout += 1200 ;
-            }
-        }
-        return $this->render('@LOTicket/panier.html.twig', array('commande' => $commande, 'cout' => $cout, 'day' => $commande->getDay())
-        );
+        return $this->render('@LOTicket/panier.html.twig', array('commande' => $commande));
     }
 
     public function recapitulatifAction(Request $request)
     {
         $id = (int) $request->query->get('commandeId');
         $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
+		$datas = ['commande' => $commande];
+		$this->get('app.send_mail')->sendContactMail($datas, $commande->getEmail());
         return $this->render('@LOTicket/recapitulatif.html.twig', array('commande' => $commande)
         );
     }
@@ -135,7 +100,7 @@ class CommandeController extends Controller
 
     private function InsertTicket($commande)
     {
-        $nbTicketAdd = $commande->getBooking();
+        $nbTicketAdd = $commande->getTicketNumber();
         $addTicketBooking = $this->getDoctrine()->getRepository(Reservation::class)->findOneByDate($nbTicketAdd);
         $totalTicket = $nbTicketAdd + $addTicketBooking;
         $reservation = new Reservation();

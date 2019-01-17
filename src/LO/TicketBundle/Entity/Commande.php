@@ -14,7 +14,6 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class Commande
 {
-
     /**
      * @var int
      *
@@ -25,7 +24,7 @@ class Commande
     private $id;
 
     /**
-     *  @Assert\Date()
+     * @Assert\Date()
      *
      * @ORM\Column(name="booking", type="date")
      */
@@ -43,6 +42,10 @@ class Commande
      *
      * @ORM\Column(name="email", type="string")
      *
+     * @Assert\Email(
+     *     message = "Cet Email '{{ value }}' n'est pas valide",
+     *     checkMX = true
+     *     )
      */
     private $email;
 
@@ -55,7 +58,12 @@ class Commande
 
     /**
      * @var \int
-     *
+     * @Assert\Range(
+     *      min = 1,
+     *      max = 10,
+     *      minMessage = "Vous devez commander {{ limit }} ticket minimum",
+     *      maxMessage = "Vous ne pouvez pas commander plus de {{ limit }} tickets"
+     * )
      * @ORM\Column(name="ticket_number", type="integer")
      */
     private $ticket_number;
@@ -240,5 +248,23 @@ class Commande
         return [];
     }
         return $this->tickets->toArray();
+    }
+
+    public function getReduc()
+    {
+        $tickets = $this->getTickets();
+        foreach ($tickets as $reduc) {
+            return $reduc->getReduc();
+        }
+    }
+
+    public function getTotal()
+    {
+        $total = 0;
+        $tickets = $this->getTickets();
+        foreach ($tickets as $ticket) {
+            $total += $ticket->getTarif();
+        }
+            return $total;
     }
 }

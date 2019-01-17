@@ -1,6 +1,6 @@
 lo_commande_homepage:
     path:     /
-    defaults: { _controller: LOTicketBundle:Commande:index }
+    defaults: { _controller: LOTicketBundle:Home:index }
 
 lo_commande_form:
     path:     /commande
@@ -11,9 +11,9 @@ lo_ticket_form:
     defaults: { _controller: LOTicketBundle:Ticket:add }
 
 lo_commande_panier:
-    path:     /commande/panier
+    path:     /panier
     defaults: { _controller: LOTicketBundle:Commande:panier }
 
 lo_commande_recapitulatif:
-    path:     /commande/recapitulatif
+    path:     /recapitulatif
     defaults: { _controller: LOTicketBundle:Commande:recapitulatif }

@@ -18,7 +18,7 @@ class TicketType extends AbstractType
         $builder
             ->add('fname', TextType::class, array('label' => 'Prénom', 'required' => 'true'))
             ->add('lname', TextType::class, array('label' => 'Nom', 'required' => 'true'))
-            ->add('birthday', DateType::class, array('label' => 'Date de naissance', 'years' => range(date('Y'),1902) ,'format' => 'dd-MM-yyyy', 'placeholder' => array('month' => date('00'),'day' =>date('00'))))
+            ->add('birthday', DateType::class, array('label' => 'Date de naissance', 'widget' => 'single_text', 'html5' => false, 'attr' => ['class' => 'js-datepicker'], 'format' => 'dd/mm/yy'))
             ->add('country', CountryType::class, array('label' => 'Pays', 'preferred_choices' => array('FR')))
             ->add('reduc', CheckboxType::class, array('label' => 'Réduction', 'required' => false))
             ->getForm();

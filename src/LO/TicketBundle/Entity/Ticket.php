@@ -15,7 +15,6 @@ class Ticket
 {
     /**
      * @ORM\ManyToOne(targetEntity="Commande", inversedBy="ticket")
-     * @ORM\JoinColumn(nullable=true)
     */
     private $commande;
 
@@ -33,7 +32,7 @@ class Ticket
      *
      *@Assert\Type(
      *     type="alpha",
-     *     message="The value {{ value }} is not a valid {{ type }}."
+     *     message="Ceci '{{ value }}' n'est pas un {{ type }}."
      * )
      *
      * @ORM\Column(name="f_name", type="string", length=255)
@@ -50,7 +49,7 @@ class Ticket
      *
      *@Assert\Type(
      *     type="alpha",
-     *     message="The value {{ value }} is not a valid {{ type }}."
+     *     message="Ceci '{{ value }}' n'est pas un {{ type }}."
      * )
      *
      * @Assert\Length(
@@ -250,4 +249,53 @@ class Ticket
         return $this->commande;
     }
 
+    public function getTarif()
+    {
+        $cout = 0;
+        if ( $this->getReduc() === true){
+            $cout+= 10;
+        }
+        if ($this->calculAge() >= 4 && $this->calculAge() < 12 && $this->getReduc() === false) {
+            $cout += 8 ;
+        }
+        if ($this->calculAge() >= 12 && $this->calculAge() < 60 && $this->getReduc() === false) {
+            $cout += 16 ;
+        }
+        if ($this->calculAge() >= 60 && $this->getReduc() === false) {
+            $cout += 12 ;
+        }
+        if ($this->getCommande()->getDay() === true) {
+            return $cout / 2;
+        }
+        return $cout;
+    }
+
+    public function getTypeTarif()
+    {
+        if ($this->getReduc() === true){
+            $type = 'Réduction';
+        }
+        if ($this->calculAge() <= 4 && $this->getReduc() === false) {
+            $type = 'Moins de 4 ans';
+        }
+        if ($this->calculAge() >= 4 && $this->calculAge() < 12 && $this->getReduc() === false) {
+            $type = 'Junior';
+        }
+        if ($this->calculAge() >= 12 && $this->calculAge() < 60 && $this->getReduc() === false) {
+            $type = 'Normal';
+        }
+        if ($this->calculAge() >= 60 && $this->getReduc() === false) {
+            $type = 'Senior';
+        }
+        return $type;
+    }
+
+    protected function calculAge() {
+        $birthday = $this->getBirthday();
+        $year = $birthday->format('Y');
+        $now = new \DateTime();
+        $today = $now->format('Y');
+        $age = $today - $year;
+        return $age;
+    }
 }

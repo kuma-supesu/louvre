@@ -19,15 +19,13 @@ class CommandeType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('booking', DateType::class, array('label' => 'Date de réservation', 'years' => range(date('Y'), 2100),'format' => 'dd-MM-yyyy', 'placeholder' => array('month' => date(' '),'day' =>date(' '))))
-            ->add('booking_code', HiddenType::class)
-            ->add('email', RepeatedType::class, array('required' => true, 'first_options'  => array('label' => 'Entrez votre Email'), 'second_options' => array('label' => 'Vérification de votre Email'), 'invalid_message' => 'Les Emails ne correspondent pas.'))
+            ->add('booking', DateType::class, array('widget' => 'single_text', 'label' => 'Date de Réservation', 'html5' => false, 'attr' => ['class' => 'js-datepicker'], 'format' => 'dd/mm/yy'))
             ->add('day',    CheckboxType::class, array('label' => 'Tarif demi journée', 'required' => false))
             ->add('ticket_number', IntegerType::class, array('label' => 'Nombre de ticket', 'required' => true))
-            ->add('tickets', CollectionType::class, array(
-                'entry_type' => TicketType::class, 'label' => false
-            ))
-            ->add('save', SubmitType::class, array('label' => 'Valider'))
+            ->add('booking_code', HiddenType::class)
+            ->add('email', RepeatedType::class, array('required' => true, 'first_options'  => array('label' => 'Entrez votre Email'), 'second_options' => array('label' => 'Vérification de votre Email'), 'invalid_message' => 'Les Emails ne correspondent pas.'))
+            ->add('tickets', CollectionType::class, array('entry_type' => TicketType::class, 'label' => false))
+            ->add('save', SubmitType::class, array('label' => 'Valider', 'attr' => array('class' => 'btn')))
             ->getForm();
     }
 
@@ -35,6 +33,7 @@ class CommandeType extends AbstractType
     {
         $resolver->setDefaults(array(
             'data_class' => Commande::class,
+            'allow_extra_fields' => true
         ));
     }
 }
