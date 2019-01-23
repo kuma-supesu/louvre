@@ -5,7 +5,7 @@
     {% set msg_hr= '10h00' %}
 {%  endif %}
 
-{% if commande.reduc == true %}{% set msg_reduc = 'La case réduction à été coché, il sera nécessaire de présenter la carte d\'étudiant, militaire ou équivalent à l\'entrée du musée.' %}
+{% if commande.reduc == true %}{% set msg_reduc = 'il sera nécessaire de présenter la carte d\'étudiant, militaire ou équivalent à l\'entrée du musée.' %}
 {% else %}
     {% set msg_reduc = '' %}
 {%  endif %}
@@ -17,82 +17,39 @@
 
 {% set totalStripe = commande.total * 100 %}
 
-{% block head%}
-    {{ parent() }}
-    <link rel="stylesheet" href="{{asset('css/form.css')}}">
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-{% endblock %}
+{% set title_page = 'Panier' %}
+
+{% block head%}{{ parent() }}{% endblock %}
 
 {% block body %}
-    <header id="header">{% block header %}
-            <div class="container header-top">
-                <div class="row">
-                    <div class="col-6 top-head-left"></div>
-                    <div class="col-6 top-head-right">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr/>
-            </div>
-            <div class="container">
-                <div class="row align-items-center justify-content-between d-flex">
-                    <div id="logo">
-                        <a href="{{ path('lo_commande_homepage') }}"><img src="{{asset ('img/logo2.png')}}" alt="" title="" /></a>
-                    </div>
-                    <nav id="nav-menu-container">
-                        <ul class="nav-menu">
-                            <li class="menu-active"><a href="{{ path('lo_commande_homepage') }}">Home</a></li>
-                            <li><a href="{{ path('lo_commande_form') }}">Ticket</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        {% endblock %}</header>
-
-    <section class="banner-area relative">
-        <div class="overlay overlay-bg"></div>
-        <div class="container">
-            <div class="row d-flex align-items-center justify-content-center">
-                <div class="about-content col-lg-12">
-                    <h1 class="text-white">
-                        Panier
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </section>
+ {% block header %}{{ parent() }}{% endblock %}
+    {% block banner %}{{ parent() }}{% endblock %}
 
     <section class="upcoming-exibition-area section-gap">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
                 <div class="menu-content col-lg-8">
-                    <div class="title text-center">
-                        <h3>Vous voulez réserver pour le : {{ commande.bookingISO8601}} à partir de {{ msg_hr }} ({{ msg_day }})</h3>
-                        <h3> Votre E-mail : {{ commande.email }}</h3></br>
+                    <div class="title">
+                        <h4>Vous allez réserver pour le : {{ commande.bookingISO8601}} à partir de {{ msg_hr }} ({{ msg_day }})</h4>
+                        <h4> Votre E-mail : {{ commande.email }}</h4><br/>
                         <a href="{{ path('lo_ticket_form') }}">Retour aux tickets</a>
-                        <div class="text-center mt-50">
+                        <div class="mt-50">
                             {% for ticket in commande.tickets %}
                                 <div class="d-inline-flex p-2 align-items-center flex-wrap">
                                     <div class="form d-flex p-2">
-                                        <ul id="form>
-                                            <h4>Ticket n° {{ loop.index }}</h4>
-                                            <li>{{ ticket.fName }}</li>
-                                            <li>{{ ticket.lName }}</li>
-                                            <li>{{ ticket.birthdayISO8601 }}</li>
-                                            <li>Tarif : {{ ticket.typetarif }} ({{ ticket.tarif }}€)</li>
+                                        <ul id="form">
+                                            <li><h4>Ticket n° {{ loop.index }}</h4></li>
+                                            <li><p>{{ ticket.fName }}</p></li>
+                                            <li><p>{{ ticket.lName }}</p></li>
+                                            <li><p>{{ ticket.birthdayISO8601 }}</p></li>
+                                            <li><p>Tarif : {{ ticket.typetarif }} ({{ ticket.tarif }}€)</p></li>
                                         </ul>
                                     </div>
                                 </div>
                             {% endfor %}
-                            {{ msg_reduc }}
+                            {{ msg_reduc }} <br>
                             <h3>Total</h3>
-                            <h5>{{ commande.total }}€ - {{ commande.ticketNumber }} Ticket(s)</h5>
-                            <form action="{{ path('lo_commande_recapitulatif', {'commandeId' :  commande.id}) }}"method="POST">
+                            <h4>{{ commande.total }}€ - {{ commande.ticketNumber }} Ticket(s)</h4>
+                            <form action="{{ path('lo_commande_recapitulatif', {'commandeId' :  commande.id}) }}" method="POST">
                                 <script
                                         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                                         data-key="pk_test_PslFJhREczoU1acpGw8s6VKR"
@@ -105,18 +62,15 @@
                                         data-currency="eur">
                                 </script>
                             </form>
-                        </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
 
-{% block javascripts %}
-    {{ parent() }}
+{% block javascripts %}{{ parent() }}
     <script>
         $("button").addClass("btn_cart").removeClass("stripe-button-el").append('<div class="fa fa-shopping-cart"></div>');
-</script>
+    </script>
 {% endblock %}
 {% endblock %}

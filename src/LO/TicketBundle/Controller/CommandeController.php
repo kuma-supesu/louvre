@@ -5,11 +5,16 @@ use LO\TicketBundle\Entity\Reservation;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use LO\TicketBundle\Form\Type\CommandeType;
+use Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag;
+use Symfony\Component\HttpFoundation\Session\Session;
+use Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage;
 
 class CommandeController extends Controller
 {
     public function addAction(Request $request)
     {
+        $session = new Session(new NativeSessionStorage(), new AttributeBag());
+
         $errors = [];
         $commande = new Commande();
         $commande->setBookingCode(random_int(100, 1000000));
@@ -30,13 +35,13 @@ class CommandeController extends Controller
                 }
 
                 if (!$errors) {
-                    $em = $this->getDoctrine()->getManager();
-                    $em->persist($commande);
-                    $em->flush();
 
-                    return $this->redirectToRoute('lo_ticket_form', array('commandeId' =>  $commande->getId()
-                        )
-                    );
+                    $session->set('booking', $commande->getBooking());
+                    $session->set('booking_code', $commande->getBookingCode());
+                    $session->set('ticket_number', $commande->getTicketNumber());
+                    $session->set('email', $commande->getEmail());
+
+                    return $this->redirectToRoute('lo_ticket_form');
                 }
             }
         }

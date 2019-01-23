@@ -1,63 +1,23 @@
 {% extends "@LOTicket/layout.twig" %}
-{% set msg = 'Bienvenue au Musée du Louvre' %}
 {% block head%}{{ parent() }}{% endblock %}
-
 {% block body %}
-<body>
-<header id="header">{% block header %}
-        <div class="container header-top">
-            <div class="row">
-                <div class="col-6 top-head-left"></div>
-                <div class="col-6 top-head-right">
-                    <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr/>
-        </div>
-        <div class="container">
-            <div class="row align-items-center justify-content-between d-flex">
-                <div id="logo">
-                    <a href="{{ path('lo_commande_homepage') }}"><img src="{{asset ('img/logo2.png')}}" alt="" title="" /></a>
-                </div>
-                <nav id="nav-menu-container">
-                    <ul class="nav-menu">
-                        <li class="menu-active"><a href="{{ path('lo_commande_homepage') }}">Home</a></li>
-                        <li><a href="{{ path('lo_commande_form') }}">Ticket</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    {% endblock %}</header>
+{% block header %}{{ parent() }}{% endblock %}
 <section class="banner-area relative" id="home">
     <div class="overlay overlay-bg"></div>
-    <div class="container">
-        <div class="row fullscreen d-flex align-items-center justify-content-center">
+        <div class="fullscreen d-flex align-items-center justify-content-center">
             <div class="banner-content col-lg-8">
-                <h1 class="text-white text-center">{{ msg }}</h1>
-                <h2 class="text-white text-center">
-                    "Exhibition on Modern Era"
-                </h2>
-                <p id="txt" class="pt-20 pb-20 text-white text-center mt-3">
-                Universel par la richesse de ses collections, le Louvre l’est aussi par la grande diversité de son public.
-                    Pour s’adapter à la diversité de son public, le Louvre s’attache à se montrer toujours plus accessible : généralisation progressive du bilinguisme
-                    voire du trilinguisme sur les cartels des 38 000 œuvres qui sont exposées; réorganisation de la numérotation des salles;
-                    élaboration d’un nouveau plan guide plus simple d’utilisation ; développement de l’éducation artistique.</p>
                 <div class="text-center mt-5">
-                    <div>
-                        <a href="{{ path('lo_commande_form') }}"><button class="btn text-uppercase">Réservez vos tickets</button></a>
-                    </div>
+                    <h1 class="text-white text-center">Bienvenue au Musée du Louvre</h1>
+                    <h2 class="text-white text-center">"Exhibition on Modern Era"</h2>
+                    <p id="txt" class="pt-20 pb-20 text-white text-center mt-3">
+                        Universel par la richesse de ses collections, le Louvre l’est aussi par la grande diversité de son public.
+                        Pour s’adapter à la diversité de son public, le Louvre s’attache à se montrer toujours plus accessible : généralisation progressive du bilinguisme
+                        voire du trilinguisme sur les cartels des 38 000 œuvres qui sont exposées; réorganisation de la numérotation des salles;
+                        élaboration d’un nouveau plan guide plus simple d’utilisation ; développement de l’éducation artistique.</p>
+                    <a href="{{ path('lo_commande_form') }}"><button class="btn text-uppercase">Réservez vos tickets</button></a>
                 </div>
             </div>
         </div>
-    </div>
 </section>
-{% block javascripts %}
-    {{ parent() }}
-{% endblock %}
-</body>
+{% block javascripts %}{{ parent() }}{% endblock %}
 {% endblock %}

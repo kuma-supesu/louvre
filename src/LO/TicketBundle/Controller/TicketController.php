@@ -7,15 +7,21 @@ use LO\TicketBundle\Entity\Commande;
 use LO\TicketBundle\Form\Type\CommandeTicketType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag;
+use Symfony\Component\HttpFoundation\Session\Session;
+use Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage;
 
 class TicketController extends Controller
 {
     public function addAction(Request $request)
     {
-        $id = (int) $request->query->get('commandeId');
-        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
-        $em = $this->getDoctrine()->getManager();
-        for ($i = 0; $i < $commande->getTicketNumber(); $i++) {
+        $session = new Session(new NativeSessionStorage(), new AttributeBag());
+
+        //dump($session->all());exit;
+
+        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($session->getId());
+        //$em = $this->getDoctrine()->getManager();
+        for ($i = 0; $i < $session->get('ticket_number'); $i++) {
             $commande->addTicket(new Ticket());
         }
 

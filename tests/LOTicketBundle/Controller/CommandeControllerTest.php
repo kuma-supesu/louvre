@@ -10,25 +10,25 @@ class CommandeControllerTest extends WebTestCase
     {
         $client = static::createClient();
         $crawler = $client->request('GET', '/commande');
-        $this->assertCount(1, $crawler->filter('html:contains("Commande")'));
+        $this->assertCount(1, $crawler->filter('html:contains("Expositions")'));
     }
 
     public function testBooking()
     {
         $client = static::createClient();
         $crawler = $client->request('GET', '/commande');
-        $buttonCrawlerNode = $crawler->selectButton('Valider');
+        $buttonCrawlerNode = $crawler->selectButton('commande[save]');
         $form = $buttonCrawlerNode->form();
 
-        $form['commande[booking]'] = 12/02/2018;
+        $form['commande[booking]'] = '18/01/19';
         $form['commande[ticket_number]'] = 1;
-        $form['commande[email]'] = 'test@gmail.com';
+        $form['commande[email][first]'] = 'test@gmail.com';
+        $form['commande[email][second]'] = 'test@gmail.com';
 
         $client->submit($form);
+        $this->assertTrue($client->getResponse()->isRedirect());
+        $client->followRedirect();
+        $this->assertContains( 'Sélection Ticket(s)', $client->getResponse()->getContent() );
 
-        $link = $crawler->selectLink('valider')->link();
-        $this->assertContains('/commande', $link->getUri());
-        $submit = $client->click($link);
-        $this->assertCount(1, $submit->filter('html:contains("tickets")'));
     }
 }

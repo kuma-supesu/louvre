@@ -2300,7 +2300,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-content {
-  margin-top: -90px;
+  margin-top: 90px;
   text-align: center;
 }
 
@@ -2315,13 +2315,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 812px) {
   .banner-content h1 {
     font-size: 36px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 812px) {
   .banner-content h1 br {
     display: none;
   }
@@ -2331,6 +2331,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   .banner-content h1 {
     font-size: 45px;
   }
+}
+
+@media (max-height: 812px) {
+  .banner-content{
+    margin-top: 100px;
+  }
+}
+
+@media (max-height: 740px) {
+    .banner-content{
+        margin-top: 90px;
+    }
+}
+
+@media (max-height: 570px) {
+    .banner-content{
+        margin-top: 220px;
+    }
 }
 
 @media (max-width: 414px) {
