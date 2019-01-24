@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	"use strict";
 
@@ -9,7 +8,7 @@ $(document).ready(function(){
 	fitscreen 			 = window_height - header_height;
 
 
-	$(".fullscreen").css("height", window_height)
+	$(".fullscreen").css("height", window_height);
 	$(".fitscreen").css("height", fitscreen);
 
     $('input').click(function () {
@@ -138,28 +137,5 @@ $(document).ready(function(){
       $('#header').removeClass('header-scrolled');
     }
   })
-
-    $('.active-exibition-carusel')({
-        items:3,
-        margin:30,
-        autoplay:true,
-        loop:true,
-        dots: true,
-            responsive: {
-            0: {
-                items: 1
-            },
-            480: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            900: {
-                items: 3,
-            }
-
-        }
-    });
 
  });

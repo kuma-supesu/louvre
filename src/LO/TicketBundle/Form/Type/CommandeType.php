@@ -19,7 +19,7 @@ class CommandeType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('booking', DateType::class, array('widget' => 'single_text', 'label' => 'Date de Réservation', 'html5' => false, 'attr' => ['class' => 'js-datepicker'], 'format' => 'dd/mm/yy'))
+            ->add('booking', DateType::class, array('widget' => 'single_text', 'label' => 'Date de Réservation', 'html5' => false, 'attr' => ['class' => 'js-datepicker'], 'format' => 'dd-MM-yy'))
             ->add('ticket_number', IntegerType::class, array('label' => 'Nombre de ticket', 'required' => true))
             ->add('booking_code', HiddenType::class)
             ->add('email', RepeatedType::class, array('required' => true, 'first_options'  => array('label' => 'Entrez votre Email'), 'second_options' => array('label' => 'Vérification de votre Email'), 'invalid_message' => 'Les Emails ne correspondent pas.'))

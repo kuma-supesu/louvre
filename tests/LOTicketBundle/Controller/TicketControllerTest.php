@@ -22,7 +22,7 @@ class TicketControllerTest extends WebTestCase
 
         $form['commande_ticket[tickets][0][fname]'] = 'Adam';
         $form['commande_ticket[tickets][0][lname]'] = 'Martin';
-        $form['commande_ticket[tickets][0][birthday]'] = '12/05/1975';
+        $form['commande_ticket[tickets][0][birthday]'] = '12-05-1975';
         $form['commande_ticket[tickets][0][country]'] = 'FR';
 
         $client->submit($form);
