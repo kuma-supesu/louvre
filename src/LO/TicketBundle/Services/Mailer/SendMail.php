@@ -14,7 +14,7 @@ class SendMail
 
     public function sendContactMail($datas, $receiver){
         $message = (new \Swift_Message('Confirmation de commande de ticket(s) du Musée du Louvre'))
-            ->setFrom('jkenobi@free.fr')
+            ->setFrom('reservation@jstadelmann.fr')
             ->setTo($receiver)
             ->setBody(
                 $this->twig->render(

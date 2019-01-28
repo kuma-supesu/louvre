@@ -580,6 +580,10 @@ td, th {
   transition: all 0.3s ease 0s;
 }
 
+.fullscreen {
+    height: 100vh;
+}
+
 .section-full {
   padding: 100px 0;
 }

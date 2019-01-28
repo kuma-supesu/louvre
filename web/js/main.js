@@ -1,19 +1,14 @@
 $(document).ready(function(){
 	"use strict";
 
-	var window_width 	 = $(window).width(),
-	window_height 		 = window.innerHeight,
-	header_height 		 = $(".default-header").height(),
-	header_height_static = $(".site-header.static").outerHeight(),
-	fitscreen 			 = window_height - header_height;
-
-
-	$(".fullscreen").css("height", window_height);
-	$(".fitscreen").css("height", fitscreen);
-
+	//
+    var countChecked = function() {
+        $( "input:checked" ).length;
+    };
+    $( "input[type=checkbox]" ).on( "click", countChecked );
     $('input').click(function () {
         $('#message_reduc').remove();
-        if ($(this).prop('checked')) {
+        if ( countChecked > 0) {
             $('#commande_save').before('<p id="message_reduc">Il sera nécessaire de présenter sa carte d\'étudiant, militaire ou équivalent à l\'entrée du musée.</p>');
             $('p').css("color", "red")
         }});
