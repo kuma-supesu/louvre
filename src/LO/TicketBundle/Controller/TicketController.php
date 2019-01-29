@@ -31,7 +31,7 @@ class TicketController extends Controller
                     $em->persist($ticket);
                     $em->flush($ticket);
                 }
-                    return $this->redirectToRoute('lo_commande_panier',array('commandeId' => $id));
+                    return $this->redirectToRoute('lo_commande_panier', array('commandeId' => $id));
             }
         }
     return $this->render('@LOTicket/ticket.html.twig', array(

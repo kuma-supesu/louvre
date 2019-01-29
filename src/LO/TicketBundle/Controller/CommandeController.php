@@ -85,11 +85,11 @@ class CommandeController extends Controller
     {
         $date = $commande->getBooking();
         $dayOfWeek = $date->format('w');
-        $dayMonth = $date->format('d-m-y');
+        $dayMonth = $date->format('y-m-d');
         $now = new \DateTime('');
-        $dayNow = $now->format('d-m-y');
+        $dayNow = $now->format('y-m-d');
         if ($dayMonth === '01-05' || $dayMonth === '01-11' || $dayMonth === '25-12' || $dayOfWeek === 2) {
-            return false ;
+            return false;
         }
         if ( $dayMonth < $dayNow){
             return false;

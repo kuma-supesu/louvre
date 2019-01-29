@@ -31,7 +31,7 @@
                     <div class="title">
                         <h4>Vous allez réserver pour le : {{ commande.bookingISO8601}} à partir de {{ msg_hr }} ({{ msg_day }})</h4>
                         <h4> Votre E-mail : {{ commande.email }}</h4><br/>
-                        <a href="{{ path('lo_ticket_form') }}">Retour aux tickets</a>
+                        <a href="{{ path('lo_ticket_form', {'commandeId' :  commande.id}) }}">Retour aux tickets</a>
                         <div class="mt-50">
                             {% for ticket in commande.tickets %}
                                 <div class="d-inline-flex p-2 align-items-center flex-wrap">
