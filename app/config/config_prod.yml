@@ -10,7 +10,6 @@ imports:
 
 framework:
   session:
-    # set handler_id to null to use default session handler from php.ini (memcached)
     handler_id:  ~
 
 monolog:
