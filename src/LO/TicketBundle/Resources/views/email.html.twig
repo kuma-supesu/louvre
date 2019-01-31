@@ -15,10 +15,9 @@
 {%  endif %}
 {% block body %}
 <h3>Bravo! Vous avez réservé!</h3>
-
-Réservation réussie pour le {{ commande.bookingISO8601}} à partir de {{ msg_hr }}.<br/>
-Numéro de commande : ML{{ commande.bookingCode }}.<br/>
-{{ msg_day }}
+    <p class="font20">Réservation réussie pour le {{ commande.bookingISO8601}} à partir de {{ msg_hr }}.</p>
+    <p class="font20">Numéro de commande : ML{{ commande.bookingCode }}.</p>
+    <p class="font20">{{ msg_day }}</p>
     {% for ticket in commande.tickets %}
         <ul class="tags col-sm" id="form">
             <li>{{ ticket.fName }}</li>
@@ -28,9 +27,7 @@ Numéro de commande : ML{{ commande.bookingCode }}.<br/>
             <li>Tarif : {{ ticket.typetarif }}</li>
         </ul>
     {% endfor %}
-
-{{ msg_reduc }}<br/>
-
-Nous vous remercions pour votre achat.<br/>
+    <p class="font20">{{ msg_reduc }}</p>
+    <p class="font20">Nous vous remercions pour votre achat.</p>
 <img src="{{ absolute_url(asset('images/logo.png')) }}">
 {% endblock %}

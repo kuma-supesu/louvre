@@ -26,7 +26,6 @@ class TicketController extends Controller
         if ($request->isMethod('POST')) {
             $form->handleRequest($request);
             if ($form->isValid()) {
-
                 foreach ($commande->getTickets() as $ticket){
                     $em->persist($ticket);
                     $em->flush($ticket);
@@ -35,7 +34,7 @@ class TicketController extends Controller
             }
         }
     return $this->render('@LOTicket/ticket.html.twig', array(
-        'form' => $form->createView(),
+        'form' => $form->createView(), 'commandeId' => $commande->getId()
     ));
     }
 }

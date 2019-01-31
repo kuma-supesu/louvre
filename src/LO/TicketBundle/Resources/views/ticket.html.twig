@@ -23,7 +23,6 @@
                                         <div class="form d-flex p-2" id="form">
                                             <ul>
                                                 <h4>Ticket n° {{ loop.index }}</h4>
-                                                <br>
                                                 {{ form_row(ticket.fname) }}
                                                 {{ form_row(ticket.lname) }}
                                                 {{ form_row(ticket.birthday) }}
@@ -36,7 +35,7 @@
                                 {% endfor %}
                                 <div class="d-block p-2"><button class="btn_cart" type="submit" id="commande_save" name="commande[save]">Valider</button></div>
                             </form>
-                            <a href="{{ path('lo_commande_form') }}">Retour à la commande</a>
+                            <a href="{{ path('lo_commande_form', {'commandeId' :  commandeId}) }}">Retour à la commande</a>
                         </div>
                     </div>
                 </div>

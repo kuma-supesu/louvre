@@ -30,8 +30,7 @@
                 <div class="menu-content col-lg-8">
                     <div class="title">
                         <h4>Vous allez réserver pour le : {{ commande.bookingISO8601}} à partir de {{ msg_hr }} ({{ msg_day }})</h4>
-                        <h4> Votre E-mail : {{ commande.email }}</h4><br/>
-                        <a href="{{ path('lo_ticket_form', {'commandeId' :  commande.id}) }}">Retour aux tickets</a>
+                        <h4> Votre E-mail : {{ commande.email }}</h4>
                         <div class="mt-50">
                             {% for ticket in commande.tickets %}
                                 <div class="d-inline-flex p-2 align-items-center flex-wrap">
@@ -46,7 +45,7 @@
                                     </div>
                                 </div>
                             {% endfor %}
-                            {{ msg_reduc }} <br>
+                            {{ msg_reduc }}
                             <h3>Total</h3>
                             <h4>{{ commande.total }}€ - {{ commande.ticketNumber }} Ticket(s)</h4>
                             <form action="{{ path('lo_commande_recapitulatif', {'commandeId' :  commande.id}) }}" method="POST">

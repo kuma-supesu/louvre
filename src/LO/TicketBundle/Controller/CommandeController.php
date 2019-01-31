@@ -11,7 +11,12 @@ class CommandeController extends Controller
     public function addAction(Request $request)
     {
         $errors = [];
-        $commande = new Commande();
+        $id = $request->query->get('commandeId');
+        if ($id) {
+            $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
+        } else {
+            $commande = new Commande();
+        }
         $commande->setBookingCode(random_int(100, 1000000));
         $form = $this->createForm(CommandeType::class, $commande);
         if ($request->isMethod('POST')) {
@@ -32,7 +37,7 @@ class CommandeController extends Controller
                 if (!$errors) {
                     $em = $this->getDoctrine()->getManager();
                     $em->persist($commande);
-                    $em->flush();
+                    $em->flush($commande);
                     return $this->redirectToRoute('lo_ticket_form', array('commandeId' =>  $commande->getId()
                         )
                     );

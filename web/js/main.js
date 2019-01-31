@@ -1,12 +1,8 @@
 $(document).ready(function(){
 	"use strict";
 
-	//
-    var countChecked = function() {
-        $( "input:checked" ).length;
-    };
-    $( "input[type=checkbox]" ).on( "click", countChecked );
     $('input').click(function () {
+        var countChecked = $( "input:checked" ).length;
         $('#message_reduc').remove();
         if ( countChecked > 0) {
             $('#commande_save').before('<p id="message_reduc">Il sera nécessaire de présenter sa carte d\'étudiant, militaire ou équivalent à l\'entrée du musée.</p>');
