@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="functional website base">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/CommandeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/CommandeType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="functional website base" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,26 +29,27 @@
     <session id="2011403167">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="74" />
+          <entry key="project.closed" value="75" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.4" value="32" />
+          <entry key="project.open.time.4" value="33" />
           <entry key="project.open.time.5" value="38" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="76" />
+          <entry key="project.opened" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="config" value="6" />
           <entry key="css" value="1179" />
-          <entry key="dist" value="16" />
+          <entry key="dist" value="17" />
           <entry key="dummy" value="35" />
           <entry key="html" value="166" />
           <entry key="js" value="500" />
           <entry key="php" value="7545" />
           <entry key="twig" value="6162" />
           <entry key="txt" value="143" />
-          <entry key="yml" value="268" />
+          <entry key="yml" value="274" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -67,23 +58,26 @@
           <entry key="HTML" value="166" />
           <entry key="JavaScript" value="500" />
           <entry key="PHP" value="7545" />
-          <entry key="PLAIN_TEXT" value="194" />
+          <entry key="PLAIN_TEXT" value="201" />
           <entry key="Twig" value="6162" />
-          <entry key="YAML" value="268" />
+          <entry key="YAML" value="274" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="config" value="1" />
           <entry key="css" value="31" />
-          <entry key="dist" value="8" />
+          <entry key="dist" value="10" />
           <entry key="html" value="3" />
           <entry key="jpg" value="3" />
           <entry key="js" value="40" />
+          <entry key="known_hosts" value="1" />
+          <entry key="ovhconfig" value="1" />
           <entry key="php" value="196" />
           <entry key="png" value="2" />
           <entry key="sample" value="1" />
           <entry key="twig" value="157" />
-          <entry key="yml" value="45" />
+          <entry key="yml" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -93,9 +87,9 @@
           <entry key="Image" value="5" />
           <entry key="JavaScript" value="40" />
           <entry key="PHP" value="196" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="PLAIN_TEXT" value="14" />
           <entry key="Twig" value="157" />
-          <entry key="YAML" value="45" />
+          <entry key="YAML" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -114,77 +108,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-              <folding>
-                <element signature="e#46#80#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="37" selection-start-line="37" selection-end-line="37" selection-end-column="123" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/post-update.sample">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="41" column="88" selection-start-line="41" selection-start-column="88" selection-end-line="41" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="90">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -221,9 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/add.html.twig" />
-        <option value="$PROJECT_DIR$/var/cache/dev/twig/d3/d341a9c513542f5bd2670b8abba9721859ba76666fc7a30e01b5493a97620bfc.php" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recap.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Prix.php" />
@@ -248,7 +173,6 @@
         <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/HomeCommandTest.php" />
         <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/Test.php" />
         <option value="$PROJECT_DIR$/web/css/form.css" />
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/app/config/config_prod_secrets.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/commande.html.twig" />
@@ -272,6 +196,10 @@
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/config" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml.dist" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/routing.yml" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml" />
       </list>
     </option>
   </component>
@@ -329,10 +257,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="648" />
-    <option name="y" value="510" />
-    <option name="width" value="2558" />
-    <option name="height" value="1382" />
+    <option name="x" value="598" />
+    <option name="y" value="582" />
+    <option name="width" value="2559" />
+    <option name="height" value="1383" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -344,6 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -501,7 +430,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -672,6 +600,7 @@
       <workItem from="1548930273319" duration="2755000" />
       <workItem from="1548949951052" duration="2664000" />
       <workItem from="1548955417074" duration="701000" />
+      <workItem from="1549037529106" duration="2396000" />
     </task>
     <task id="LOCAL-00001" summary="calcul tickets + display tickets">
       <created>1543600460337</created>
@@ -698,13 +627,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="439061000" />
+    <option name="totallyTimeSpent" value="441457000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="432" y="340" width="1705" height="921" extended-state="0" />
+    <frame x="399" y="388" width="1706" height="922" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18923713" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1891253" />
       <window_info id="Structure" order="1" weight="0.24970178" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -775,19 +704,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="functional website base" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/img/header-bg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/font-awesome.min.css" />
-    <entry file="file://$PROJECT_DIR$/web/css/jquerysctipttop.css" />
-    <entry file="file://$PROJECT_DIR$/web/js/ticket.js" />
-    <entry file="file://$PROJECT_DIR$/web/js/superfish.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31" />
@@ -821,12 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/config_prod.yml" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/services.yml" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/security.yml" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/routing.yml" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/config.yml" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml.dist" />
     <entry file="file://$PROJECT_DIR$/web/css/magnific-popup.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1000,23 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding>
-            <element signature="e#46#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="37" selection-start-line="37" selection-end-line="37" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
@@ -1031,10 +924,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/post-update.sample">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        <state relative-caret-position="180">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/known_hosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/.ovhconfig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1045,17 +962,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="330">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/post-update.sample">
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="704">
+          <caret line="37" selection-start-line="37" selection-end-line="37" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="e#46#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-466" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
