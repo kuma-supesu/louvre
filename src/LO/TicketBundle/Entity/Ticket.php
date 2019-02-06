@@ -3,7 +3,7 @@
 namespace LO\TicketBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use LO\TicketBundle\Entity\Commande as Commande;
+use LO\TicketBundle\Entity\Commande_Temp as Commande;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -14,7 +14,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 class Ticket
 {
     /**
-     * @ORM\ManyToOne(targetEntity="Commande", inversedBy="ticket")
+     * @ORM\ManyToOne(targetEntity="Commande_Temp", inversedBy="ticket")
     */
     private $commande;
 
@@ -228,11 +228,11 @@ class Ticket
     /**
      * Set commande
      *
-     * @param \LO\TicketBundle\Entity\Commande $commande
+     * @param \LO\TicketBundle\Entity\Commande_Temp $commande
      *
      * @return Ticket
      */
-    public function setCommande(Commande $commande = null)
+    public function setCommande(Commande_Temp $commande = null)
     {
         $this->commande = $commande;
 
@@ -242,7 +242,7 @@ class Ticket
     /**
      * Get commande
      *
-     * @return \LO\TicketBundle\Entity\Commande
+     * @return \LO\TicketBundle\Entity\Commande_Temp
      */
     public function getCommande()
     {

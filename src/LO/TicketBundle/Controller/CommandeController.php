@@ -1,6 +1,7 @@
 <?php
 namespace LO\TicketBundle\Controller;
 use LO\TicketBundle\Entity\Commande;
+use LO\TicketBundle\Entity\Commande_Temp;
 use LO\TicketBundle\Entity\Reservation;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -13,9 +14,9 @@ class CommandeController extends Controller
         $errors = [];
         $id = $request->query->get('commandeId');
         if ($id) {
-            $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
+            $commande = $this->getDoctrine()->getRepository(Commande_Temp::class)->find($id);
         } else {
-            $commande = new Commande();
+            $commande = new Commande_Temp();
         }
         $commande->setBookingCode(random_int(100, 1000000));
         $form = $this->createForm(CommandeType::class, $commande);
@@ -33,7 +34,6 @@ class CommandeController extends Controller
                 if ($this->validationHalfDay($commande) !== true){
                     $errors[] =  'Vous ne pouvez pas commander de ticket tarif journée apres 14h.';
                 }
-
                 if (!$errors) {
                     $em = $this->getDoctrine()->getManager();
                     $em->persist($commande);
@@ -53,7 +53,7 @@ class CommandeController extends Controller
     public function panierAction(Request $request)
     {
         $id = (int) $request->query->get('commandeId');
-        $commande = $this->getDoctrine()->getRepository(commande::class)->find($id);
+        $commande = $this->getDoctrine()->getRepository(Commande_Temp::class)->find($id);
         return $this->render('@LOTicket/panier.html.twig', array('commande' => $commande));
     }
 

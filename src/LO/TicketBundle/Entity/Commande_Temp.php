@@ -8,17 +8,18 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * Commande
+ * Commande_Temp
  * @ORM\Entity
- * @ORM\Table(name="commande")
+ * @ORM\Table(name="commande_temp")
  */
-class Commande
+class Commande_Temp
 {
     /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
@@ -92,7 +93,7 @@ class Commande
      *
      * @param Assert\Date $booking
      *
-     * @return commande
+     * @return commande_temp
      */
     public function setBooking($booking)
     {
@@ -127,7 +128,7 @@ class Commande
      *
      * @param string $bookingCode
      *
-     * @return commande
+     * @return commande_temp
      */
     public function setBookingCode($bookingCode)
     {
@@ -151,7 +152,7 @@ class Commande
      *
      * @param string $email
      *
-     * @return commande
+     * @return commande_temp
      */
     public function setEmail($email)
     {
@@ -199,7 +200,7 @@ class Commande
      *
      * @param integer $ticketNumber
      *
-     * @return commande
+     * @return commande_temp
      */
     public function setTicketNumber($ticketNumber)
     {
