@@ -1,6 +1,6 @@
 imports:
-    - { resource: config.yml }
-    - { resource: parameters.php }
+- { resource: config.yml }
+- { resource: parameters.yml}
 
 #doctrine:
 #    orm:
@@ -13,15 +13,15 @@ framework:
     handler_id:  ~
 
 monolog:
-    handlers:
-        main:
-            type: fingers_crossed
-            action_level: error
-            handler: nested
-        nested:
-            type: error_log
-            path: '%kernel.logs_dir%/%kernel.environment%.log'
-            level: debug
-        console:
-            type: console
-            process_psr_3_messages: false
+  handlers:
+    main:
+      type: fingers_crossed
+      action_level: error
+      handler: nested
+    nested:
+      type: error_log
+      path: '%kernel.logs_dir%/%kernel.environment%.log'
+      level: debug
+    console:
+      type: console
+      process_psr_3_messages: false
