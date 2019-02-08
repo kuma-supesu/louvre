@@ -17,11 +17,11 @@
                         <h1 class="mb-10">Expositions en cours </h1>
                         <p>Ticket d'entrée pour visiteur individuel</p>
                         {{ form_start(form) }}
-                        {{ form_widget(form) }}
-                        {{ form_end(form) }}
                         {% for error in errors %}
                             <p>{{ error }}</p>
                         {% endfor %}
+                        {{ form_widget(form) }}
+                        {{ form_end(form) }}
                     </div>
                 </div>
             </div>

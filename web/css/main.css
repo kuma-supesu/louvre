@@ -584,6 +584,24 @@ td, th {
     height: 100vh;
 }
 
+@media (max-width: 415px) {
+    .fullscreen {
+        height: 110vh;
+    }
+}
+
+@media (max-width: 376px) {
+  .fullscreen {
+    height: 125vh;
+  }
+}
+
+@media (max-width: 321px) {
+  .fullscreen {
+    height: 170vh;
+  }
+}
+
 .section-full {
   padding: 100px 0;
 }

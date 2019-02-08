@@ -3,7 +3,7 @@
 namespace LO\TicketBundle\Controller;
 
 use LO\TicketBundle\Entity\Ticket;
-use LO\TicketBundle\Entity\Commande_Temp;
+use LO\TicketBundle\Entity\Commande;
 use LO\TicketBundle\Form\Type\CommandeTicketType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -13,7 +13,7 @@ class TicketController extends Controller
     public function addAction(Request $request)
     {
         $id = $request->query->get('commandeId');
-        $commande = $this->getDoctrine()->getRepository(Commande_Temp::class)->find($id);
+        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
         $em = $this->getDoctrine()->getManager();
 
         if (count($commande->getTickets()) != $commande->getTicketNumber()) {

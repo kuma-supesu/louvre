@@ -2,7 +2,7 @@
 
 namespace LO\TicketBundle\Form\Type;
 
-use LO\TicketBundle\Entity\Commande_Temp;
+use LO\TicketBundle\Entity\Commande;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
@@ -25,6 +25,7 @@ class CommandeTicketType extends AbstractType
             ->add('booking_code', HiddenType::class)
             ->add('email', RepeatedType::class, array('required' => true, 'first_options'  => array('label' => 'Entrez votre Email'), 'second_options' => array('label' => 'Vérification de votre Email'), 'invalid_message' => 'Les Emails ne correspondent pas.'))
             ->add('tickets', CollectionType::class, array('entry_type' => TicketType::class, 'label' => false))
+            ->add('paid', HiddenType::class)
             ->add('save', SubmitType::class, array('label' => 'Valider', 'attr' => array('class' => 'btn')))
             ->getForm();
     }
@@ -32,7 +33,7 @@ class CommandeTicketType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => Commande_Temp::class,
+            'data_class' => Commande::class,
         ));
     }
 }

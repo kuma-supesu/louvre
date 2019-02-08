@@ -76,7 +76,7 @@ class Reservation
      *
      * @return reservation
      */
-    public function setTotalTicket($totalTicket)
+    public function setTotalTicket($totalTicket = 0)
     {
         $this->totalTicket = $totalTicket;
 

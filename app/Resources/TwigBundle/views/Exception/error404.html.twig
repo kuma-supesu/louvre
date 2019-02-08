@@ -1,0 +1,27 @@
+{% extends "@LOTicket/layout.twig" %}
+
+{% set title_page = 'Page non trouvée' %}
+    {% block body %}
+        {% block header %}{{ parent() }}{% endblock %}
+        {% block banner %}{{ parent() }}{% endblock %}
+
+        <section class="upcoming-exibition-area section-gap">
+            <div class="d-flex justify-content-center">
+                <div class="menu-content col-lg-8">
+                    <div class="title">
+                        <h1>Page non trouvée</h1>
+                        <div class="mt-50">
+                            <div class="d-inline-flex p-2 align-items-center flex-wrap">
+                                <p>
+                                    La page demandée n'a pas pu être localisée.
+                                    <a href="{{ path('homepage') }}">retourner à la page d'accueil</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% block javascripts %}{{ parent() }}{% endblock %}
+    {% endblock %}

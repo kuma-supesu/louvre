@@ -19,6 +19,7 @@ class Commande
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
@@ -59,13 +60,20 @@ class Commande
      * @var \int
      * @Assert\Range(
      *      min = 1,
-     *      max = 10,
+     *      max = 100,
      *      minMessage = "Vous devez commander {{ limit }} ticket minimum",
      *      maxMessage = "Vous ne pouvez pas commander plus de {{ limit }} tickets"
      * )
      * @ORM\Column(name="ticket_number", type="integer")
      */
     private $ticket_number;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="paid", type="integer")
+     */
+    private $paid;
 
     /**
      * @ORM\OneToMany(targetEntity="Ticket", mappedBy="commande", cascade={"persist", "remove"})
@@ -217,6 +225,31 @@ class Commande
     {
         return $this->ticket_number;
     }
+
+    /**
+     * Set paid
+     *
+     * @param integer $paid
+     *
+     * @return Ticket
+     */
+    public function setPaid($paid)
+    {
+        $this->paid = $paid;
+
+        return $this;
+    }
+
+    /**
+     * Get paid
+     *
+     * @return integer
+     */
+    public function getPaid()
+    {
+        return $this->paid;
+    }
+
 
     /**
      * Set ticket

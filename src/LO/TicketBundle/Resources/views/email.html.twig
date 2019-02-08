@@ -4,7 +4,7 @@
     {% set msg_hr= '10h00' %}
 {%  endif %}
 
-{% if commande.reduc == true %}{% set msg_reduc = 'n\'oubliez d\'apporter votre carte d\'étudiant, militaire ou équivalent à l\'entrée du musée.' %}
+{% if commande.reduc == true %}{% set msg_reduc = 'n\'oubliez pas d\'apporter votre carte d\'étudiant, militaire ou équivalent à l\'entrée du musée.' %}
 {% else %}
     {% set msg_reduc = '' %}
 {%  endif %}
@@ -29,5 +29,5 @@
     {% endfor %}
     <p class="font20">{{ msg_reduc }}</p>
     <p class="font20">Nous vous remercions pour votre achat.</p>
-<img src="{{ absolute_url(asset('images/logo.png')) }}">
+<img src="{{ absolute_url(asset('img/logo2.png')) }}">
 {% endblock %}

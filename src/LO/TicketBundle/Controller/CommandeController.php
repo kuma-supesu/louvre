@@ -1,7 +1,7 @@
 <?php
 namespace LO\TicketBundle\Controller;
+
 use LO\TicketBundle\Entity\Commande;
-use LO\TicketBundle\Entity\Commande_Temp;
 use LO\TicketBundle\Entity\Reservation;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -14,11 +14,13 @@ class CommandeController extends Controller
         $errors = [];
         $id = $request->query->get('commandeId');
         if ($id) {
-            $commande = $this->getDoctrine()->getRepository(Commande_Temp::class)->find($id);
+            $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
+            dump($commande->getId());exit;
         } else {
-            $commande = new Commande_Temp();
+            $commande = new Commande();
         }
         $commande->setBookingCode(random_int(100, 1000000));
+        $commande->setPaid(0);
         $form = $this->createForm(CommandeType::class, $commande);
         if ($request->isMethod('POST')) {
 
@@ -26,7 +28,11 @@ class CommandeController extends Controller
 
             if ($form->isValid()) {
                 if ($this->isAvailableTicketByDate($commande) !== true) {
-                    $errors[] =  'Il reste ' . $this->isAvailableTicketByDate($commande) . ' ticket(s)';
+                   if ($this->isAvailableTicketByDate($commande) === false){
+                        $errors[] =  'Ce jour est complet';
+                    } else {
+                        $errors[] =  'Il reste ' . $this->isAvailableTicketByDate($commande) . ' ticket(s)';
+                    }
                 }
                 if ($this->validationDate($commande) !== true){
                     $errors[] =  'Le musée est fermé ce jour-là.';
@@ -46,14 +52,14 @@ class CommandeController extends Controller
         }
                 return $this->render('@LOTicket/commande.html.twig', array(
                     'form' => $form->createView(),
-                    'errors' => $errors
+                    'errors' => $errors,
                 ));
     }
 
     public function panierAction(Request $request)
     {
         $id = (int) $request->query->get('commandeId');
-        $commande = $this->getDoctrine()->getRepository(Commande_Temp::class)->find($id);
+        $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
         return $this->render('@LOTicket/panier.html.twig', array('commande' => $commande));
     }
 
@@ -61,8 +67,13 @@ class CommandeController extends Controller
     {
         $id = (int) $request->query->get('commandeId');
         $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
+        $em = $this->getDoctrine()->getManager();
+        $this->InsertTicket($commande);
+        $commande->setPaid(1);
 		$datas = ['commande' => $commande];
 		$this->get('app.send_mail')->sendContactMail($datas, $commande->getEmail());
+        $em->persist($commande);
+        $em->flush();
         return $this->render('@LOTicket/recapitulatif.html.twig', array('commande' => $commande)
         );
     }
@@ -74,6 +85,12 @@ class CommandeController extends Controller
         $bookByDate = $this->getDoctrine()->getRepository(Reservation::class)->findOneByDate($bookingDate);
 
         if ($bookByDate === null) {
+            $reservation = new Reservation();
+            $reservation->setDate($bookingDate);
+            $reservation->setTotalTicket();
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($reservation);
+            $em->flush($reservation);
             return true;
         }
         if ($nbTicketMax === $bookByDate->getTotalTicket()) {
@@ -105,13 +122,15 @@ class CommandeController extends Controller
     private function InsertTicket($commande)
     {
         $nbTicketAdd = $commande->getTicketNumber();
-        $addTicketBooking = $this->getDoctrine()->getRepository(Reservation::class)->findOneByDate($nbTicketAdd);
-        $totalTicket = $nbTicketAdd + $addTicketBooking;
-        $reservation = new Reservation();
-        $reservation->setTotalTicket($totalTicket);
+        $TicketDate = $commande->getBooking();
+        $addTicketBooking = $this->getDoctrine()->getRepository(Reservation::class)->findOneByDate($TicketDate);
+        $getTicketBooking = $addTicketBooking->getTotalTicket();
+        $totalTicket = $nbTicketAdd + $getTicketBooking;
+        $setTicket = $addTicketBooking->setTotalTicket($totalTicket);
         $em = $this->getDoctrine()->getManager();
-        $em->persist();
+        $em->persist($setTicket);
         $em->flush();
+        return $setTicket;
     }
 
     private function validationHalfDay($commande)
