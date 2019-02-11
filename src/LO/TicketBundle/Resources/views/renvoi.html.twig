@@ -1,0 +1,25 @@
+{% extends "@LOTicket/layout.twig" %}
+{% set title_page = 'Renvoi des Tickets' %}
+{% block head %}{{ parent() }}{% endblock %}
+{% block body %}
+    {% block header %}{{ parent() }}{% endblock %}
+    {% block banner %}{{ parent() }}{% endblock %}
+    <section class="upcoming-exibition-area section-gap">
+        <div>
+            <div class="d-flex justify-content-center">
+                <div class="menu-content col-lg-4">
+                    <p class="title text-center">
+                        Veuillez entrer votre E-mail.
+                    </p>
+                    {{ form_start(form) }}
+                    {% for error in error %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% block javascripts %}{{ parent() }}{% endblock %}
+{% endblock %}

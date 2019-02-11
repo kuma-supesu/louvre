@@ -3,6 +3,8 @@ namespace LO\TicketBundle\Controller;
 
 use LO\TicketBundle\Entity\Commande;
 use LO\TicketBundle\Entity\Reservation;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use LO\TicketBundle\Form\Type\CommandeType;
@@ -28,16 +30,16 @@ class CommandeController extends Controller
 
             if ($form->isValid()) {
                 if ($this->isAvailableTicketByDate($commande) !== true) {
-                   if ($this->isAvailableTicketByDate($commande) === false){
+                   if ($this->isAvailableTicketByDate($commande) === false) {
                         $errors[] =  'Ce jour est complet';
                     } else {
                         $errors[] =  'Il reste ' . $this->isAvailableTicketByDate($commande) . ' ticket(s)';
                     }
                 }
-                if ($this->validationDate($commande) !== true){
+                if ($this->validationDate($commande) !== true) {
                     $errors[] =  'Le musée est fermé ce jour-là.';
                 }
-                if ($this->validationHalfDay($commande) !== true){
+                if ($this->validationHalfDay($commande) !== true) {
                     $errors[] =  'Vous ne pouvez pas commander de ticket tarif journée apres 14h.';
                 }
                 if (!$errors) {
@@ -76,6 +78,33 @@ class CommandeController extends Controller
         $em->flush();
         return $this->render('@LOTicket/recapitulatif.html.twig', array('commande' => $commande)
         );
+    }
+
+    public function renvoiAction(Request $request)
+    {
+        $error = [];
+        $commande = new Commande();
+        $form = $this->createFormBuilder($commande)
+            ->add('email', EmailType::class, array('label' => 'Email :', 'required' => true))
+            ->add('save', SubmitType::class, array('label' => 'Envoyer', 'attr' => array('class' => 'btn')))
+            ->getForm();
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $data = $form->getData()->getEmail();
+            $commande = $this->getDoctrine()->getRepository(Commande::class)->findOneByEmail($data);
+
+            if ($commande === null) {
+                $error[] = 'Désolé, cet E-mail ne correspont pas à aucune enrengistrés.';
+            }
+            if (!$error) {
+                $datas = ['commande' => $commande];
+                $this->get('app.send_mail')->sendContactMail($datas, $commande->getEmail());
+                return $this->redirectToRoute('lo_commande_renvoi');
+            }
+        }
+        return $this->render('@LOTicket/renvoi.html.twig', array(
+            'form' => $form->createView(), 'error' => $error
+        ));
     }
 
     private function isAvailableTicketByDate($commande)

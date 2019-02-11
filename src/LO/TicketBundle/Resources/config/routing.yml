@@ -17,3 +17,7 @@ lo_commande_panier:
 lo_commande_recapitulatif:
     path:     /recapitulatif
     defaults: { _controller: LOTicketBundle:Commande:recapitulatif }
+
+lo_commande_renvoi:
+    path:     /renvoi
+    defaults: { _controller: LOTicketBundle:Commande:renvoi }
