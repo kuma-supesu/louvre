@@ -9,14 +9,14 @@ class TicketControllerTest extends WebTestCase
     public function testTitle()
     {
         $client = static::createClient();
-        $crawler = $client->request('GET', '/ticket?commandeId=127');
+        $crawler = $client->request('GET', '/ticket?commandeId=17');
         $this->assertCount(1, $crawler->filter('html:contains("Sélection Ticket(s)")'));
     }
 
     public function testTicketSelect()
     {
         $client = static::createClient();
-        $crawler = $client->request('GET', '/ticket?commandeId=127');
+        $crawler = $client->request('GET', '/ticket?commandeId=17');
         $buttonCrawlerNode = $crawler->selectButton('commande[save]');
         $form = $buttonCrawlerNode->form();
 

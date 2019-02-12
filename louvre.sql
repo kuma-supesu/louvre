@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  ven. 08 fév. 2019 à 13:12
+-- Généré le :  mar. 12 fév. 2019 à 18:00
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
@@ -39,14 +39,17 @@ CREATE TABLE IF NOT EXISTS `commande` (
   `paid` tinyint(1) NOT NULL,
   `creation_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Déchargement des données de la table `commande`
 --
 
 INSERT INTO `commande` (`id`, `booking`, `booking_code`, `email`, `day`, `ticket_number`, `paid`, `creation_date`) VALUES
-(16, '2019-02-27', '387599', 'jkenobi@free.fr', 0, 1, 1, '2019-02-08 10:44:56');
+(16, '2019-02-27', '387599', 'jkenobi@free.fr', 0, 1, 1, '2019-02-08 10:44:56'),
+(17, '2019-02-20', '23936', 'jkenobi@free.fr', 0, 1, 1, '2019-02-11 21:43:26'),
+(18, '2019-02-21', '524992', 'jeremie.stadelmann@gmail.com', 0, 1, 1, '2019-02-11 21:44:59'),
+(19, '2019-10-24', '234877', 'test@gmail.com', 0, 1, 0, '2019-02-12 18:53:37');
 
 -- --------------------------------------------------------
 
@@ -60,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `reservation` (
   `date` date NOT NULL,
   `totalTicket` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Déchargement des données de la table `reservation`
@@ -69,7 +72,11 @@ CREATE TABLE IF NOT EXISTS `reservation` (
 INSERT INTO `reservation` (`id`, `date`, `totalTicket`) VALUES
 (13, '2019-02-15', 0),
 (14, '2019-02-14', 1),
-(15, '2019-02-27', 1);
+(15, '2019-02-27', 1),
+(16, '2019-02-20', 2),
+(17, '2019-02-21', 1),
+(18, '2019-01-24', 0),
+(19, '2019-10-24', 0);
 
 -- --------------------------------------------------------
 
@@ -88,14 +95,16 @@ CREATE TABLE IF NOT EXISTS `ticket` (
   `reduc` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `commande_id` (`commande_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Déchargement des données de la table `ticket`
 --
 
 INSERT INTO `ticket` (`id`, `commande_id`, `f_name`, `l_name`, `birthday`, `country`, `reduc`) VALUES
-(22, 16, 'Jérémie', 'Stadelmann', '1992-10-11', 's:2:\"FR\";', 0);
+(22, 16, 'Jérémie', 'Stadelmann', '1992-10-11', 's:2:\"FR\";', 0),
+(23, 17, 'Adam', 'Martin', '1975-05-12', 's:2:\"FR\";', 0),
+(24, 18, 'Jérémie', 'Stadelmann', '1992-10-11', 's:2:\"FR\";', 0);
 
 --
 -- Contraintes pour les tables déchargées

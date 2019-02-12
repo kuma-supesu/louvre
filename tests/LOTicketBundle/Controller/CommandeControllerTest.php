@@ -20,7 +20,7 @@ class CommandeControllerTest extends WebTestCase
         $buttonCrawlerNode = $crawler->selectButton('commande[save]');
         $form = $buttonCrawlerNode->form();
 
-        $form['commande[booking]'] = '24-01-19';
+        $form['commande[booking]'] = '24-10-19';
         $form['commande[ticket_number]'] = 1;
         $form['commande[email][first]'] = 'test@gmail.com';
         $form['commande[email][second]'] = 'test@gmail.com';
@@ -29,6 +29,5 @@ class CommandeControllerTest extends WebTestCase
         $this->assertTrue($client->getResponse()->isRedirect());
         $client->followRedirect();
         $this->assertContains( 'Sélection Ticket(s)', $client->getResponse()->getContent() );
-
     }
 }
