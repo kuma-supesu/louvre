@@ -586,19 +586,19 @@ td, th {
 
 @media (max-width: 415px) {
     .fullscreen {
-        height: 110vh;
+        height: 180vh;
     }
 }
 
 @media (max-width: 376px) {
   .fullscreen {
-    height: 125vh;
+    height: 200vh;
   }
 }
 
 @media (max-width: 321px) {
   .fullscreen {
-    height: 170vh;
+    height: 250vh;
   }
 }
 

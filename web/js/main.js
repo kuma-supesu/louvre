@@ -9,6 +9,8 @@ $(document).ready(function(){
             $('p').css("color", "red")
         }});
 
+
+
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
     animation: {
@@ -26,30 +28,22 @@ $(document).ready(function(){
       'class': '',
       'id': ''
     });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>');
-    $('body').append('<div id="mobile-body-overly"></div>');
-    $('#mobile-nav').find('.menu-has-children').prepend('<i class="lnr lnr-chevron-down"></i>');
+      $('body').append($mobile_nav);
+      $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-align-justify"></i></button>');
 
-    $(document).on('click', '.menu-has-children i', function(e) {
-      $(this).next().toggleClass('menu-item-active');
-      $(this).nextAll('ul').eq(0).slideToggle();
-      $(this).toggleClass("lnr-chevron-up lnr-chevron-down");
-    });
+      $(document).on('click', '#mobile-nav-toggle', function(e) {
+          $('body').toggleClass('mobile-nav-active');
+          $('#mobile-nav-toggle i').toggleClass('fa-align-justify fa-times-circle');
+          $('#mobile-body-overly').toggle();
+      });
 
-    $(document).on('click', '#mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
-      $('#mobile-body-overly').toggle();
-    });
-
-    $(document).click(function(e) {
-      var container = $("#mobile-nav, #mobile-nav-toggle");
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
-          $('#mobile-body-overly').fadeOut();
+      $(document).click(function(e) {
+          var container = $("#mobile-nav, #mobile-nav-toggle");
+          if (!container.is(e.target) && container.has(e.target).length === 0) {
+              if ($('body').hasClass('mobile-nav-active')) {
+                  $('body').removeClass('mobile-nav-active');
+                  $('#mobile-nav-toggle i').toggleClass('fa-align-justify fa-times-circle');
+                  $('#mobile-body-overly').fadeOut();
         }
       }
     });

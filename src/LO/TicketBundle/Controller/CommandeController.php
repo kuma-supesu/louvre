@@ -94,11 +94,15 @@ class CommandeController extends Controller
             $commande = $this->getDoctrine()->getRepository(Commande::class)->findOneByEmail($data);
 
             if ($commande === null) {
-                $error[] = 'Désolé, cet E-mail ne correspont pas à aucune enrengistrés.';
+                $error[] = 'Désolé, cet adresse E-mail ne correspont à aucune enrengistrés.';
             }
             if (!$error) {
                 $datas = ['commande' => $commande];
                 $this->get('app.send_mail')->sendContactMail($datas, $commande->getEmail());
+                $this->get('session')->getFlashBag()->add(
+                    'success',
+                    'Vos tickets ont été renvoyés !'
+                );
                 return $this->redirectToRoute('lo_commande_renvoi');
             }
         }

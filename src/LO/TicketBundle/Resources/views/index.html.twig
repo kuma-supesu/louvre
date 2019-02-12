@@ -13,22 +13,21 @@
                         Pour s’adapter à la diversité de son public, le Louvre s’attache à se montrer toujours plus accessible : généralisation progressive du bilinguisme
                         voire du trilinguisme sur les cartels des 38 000 œuvres qui sont exposées, réorganisation de la numérotation des salles,
                         élaboration d’un nouveau plan guide plus simple d’utilisation, développement de l’éducation artistique.</p>
-                <div class="pt-50"></div>
-                <div class="d-flex justify-content-center">
-                <div class="col-lg-6">
-                    <h2 class="text-white text-center">Commander des Tickets.</h2>
-                    <p class="pt-2 text-white text-center">
-                        Le Musée du Louvre èvolue aussi et vous permet de réservez vos places en ligne grace à notre Ticketerie.</p>
-                    <a href="{{ path('lo_commande_form') }}"><button class="btn text-uppercase">Réservez vos tickets</button></a>
+                <div class="d-inline-flex p-2 align-items-center flex-wrap">
+                    <div class="col-lg-6">
+                        <h2 class="text-white text-center">Commander des Tickets.</h2>
+                        <p class="pt-2 text-white text-center">
+                            Le Musée du Louvre évolue aussi et vous permet de réservez vos places en ligne grace à notre Ticketerie.</p>
+                                <a class="position-btn-left" href="{{ path('lo_commande_form') }}"><button class="btn text-uppercase">Réservez vos tickets</button></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="text-white text-center">Vous avez perdu vos Tickets ?</h2>
+                        <p class="pt-2 text-white text-center">
+                            Pas de problème, entrez votre adresse E-mail d'achat et nous vous les renvoyons.</p>
+                            <a class="position-btn-right" href="{{ path('lo_commande_renvoi') }}"><button class="btn text-uppercase">Renvoyez vos tickets</button></a>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <h2 class="text-white text-center">Vous avez perdu vos Tickets ?</h2>
-                    <p class="pt-2 text-white text-center">
-                        Pas de problème, entrez votre adresse E-mail d'achat et nous vous les renvoyons.</p>
-                    <a href="{{ path('lo_commande_renvoi') }}"><button class="btn text-uppercase">Renvoyez vos tickets</button></a>
-                </div>
-            </div>
-            </div>
+        </div>
         </div>
 </section>
 {% block javascripts %}{{ parent() }}{% endblock %}

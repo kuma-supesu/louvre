@@ -17,6 +17,9 @@
                     {% endfor %}
                     {{ form_widget(form) }}
                     {{ form_end(form) }}
+                    {% for flashMessage in app.session.flashbag.get('success') %}
+                    <p>{{ flashMessage }}</p>
+                    {% endfor %}
                 </div>
             </div>
         </div>
