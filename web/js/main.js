@@ -9,8 +9,6 @@ $(document).ready(function(){
             $('p').css("color", "red")
         }});
 
-
-
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
     animation: {
@@ -84,7 +82,6 @@ $(document).ready(function(){
       }
     }
   });
-
 
     $(document).ready(function() {
 
