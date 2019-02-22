@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="functional website base">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,14 +32,14 @@
     <session id="2011403167">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="88" />
+          <entry key="project.closed" value="89" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="37" />
-          <entry key="project.open.time.5" value="44" />
+          <entry key="project.open.time.5" value="46" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="90" />
+          <entry key="project.opened" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -51,10 +50,10 @@
           <entry key="dummy" value="36" />
           <entry key="html" value="166" />
           <entry key="js" value="560" />
-          <entry key="php" value="10978" />
-          <entry key="twig" value="7279" />
+          <entry key="php" value="11042" />
+          <entry key="twig" value="7379" />
           <entry key="txt" value="143" />
-          <entry key="yml" value="375" />
+          <entry key="yml" value="381" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -62,10 +61,10 @@
           <entry key="CSS" value="1266" />
           <entry key="HTML" value="166" />
           <entry key="JavaScript" value="560" />
-          <entry key="PHP" value="10978" />
+          <entry key="PHP" value="11042" />
           <entry key="PLAIN_TEXT" value="202" />
-          <entry key="Twig" value="7279" />
-          <entry key="YAML" value="375" />
+          <entry key="Twig" value="7379" />
+          <entry key="YAML" value="381" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,11 +77,11 @@
           <entry key="js" value="42" />
           <entry key="known_hosts" value="1" />
           <entry key="ovhconfig" value="1" />
-          <entry key="php" value="274" />
+          <entry key="php" value="276" />
           <entry key="png" value="2" />
           <entry key="sample" value="1" />
-          <entry key="twig" value="188" />
-          <entry key="yml" value="72" />
+          <entry key="twig" value="191" />
+          <entry key="yml" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -91,10 +90,10 @@
           <entry key="HTML" value="3" />
           <entry key="Image" value="5" />
           <entry key="JavaScript" value="42" />
-          <entry key="PHP" value="274" />
+          <entry key="PHP" value="276" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Twig" value="188" />
-          <entry key="YAML" value="72" />
+          <entry key="Twig" value="191" />
+          <entry key="YAML" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -113,20 +112,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/css/main.css">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="595" column="3" selection-start-line="595" selection-start-column="3" selection-end-line="595" selection-end-column="3" />
+            <state relative-caret-position="150">
+              <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/main.js">
+        <entry file="file://$USER_HOME$/Desktop/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2730">
-              <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+            <state relative-caret-position="330">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -163,9 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/art-museum-master/ticket.html" />
-        <option value="$PROJECT_DIR$/web/css/general.css" />
-        <option value="$PROJECT_DIR$/web/css/jquerysctipttop.css" />
         <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/HomeCommandTest.php" />
         <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/Test.php" />
         <option value="$PROJECT_DIR$/web/css/form.css" />
@@ -205,15 +210,18 @@
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/commande.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/layout.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/renvoi.html.twig" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/index.html.twig" />
         <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/CommandeControllerTest.php" />
         <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/TicketControllerTest.php" />
         <option value="$PROJECT_DIR$/web/js/main.js" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/emai_renvoil.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" />
+        <option value="$USER_HOME$/Desktop/security.yml" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
       </list>
     </option>
   </component>
@@ -270,11 +278,11 @@
       <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="54" />
-    <option name="y" value="-36" />
-    <option name="width" value="1233" />
-    <option name="height" value="930" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1128" />
+    <option name="y" value="160" />
+    <option name="width" value="2211" />
+    <option name="height" value="1271" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -485,16 +493,17 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\wamp64\www\projet\louvre\app\Resources\TwigBundle\views\Exception" />
-      <recent name="G:\wamp64\www\projet\louvre\src\LO\TicketBundle\Entity" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\wamp64\www\projet\louvre\app\Resources\views\default" />
       <recent name="G:\wamp64\www\projet\louvre\app\Resources\views" />
       <recent name="G:\wamp64\www\projet\louvre\app\Resources\TwigBundle\views" />
       <recent name="G:\wamp64\www\projet\louvre\app\Resources\TwigBundle" />
       <recent name="G:\wamp64\www\projet\louvre\src\LO\TicketBundle\Resources\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\wamp64\www\projet\louvre\src\LO\TicketBundle\Resources\views" />
+      <recent name="G:\wamp64\www\projet\louvre\app\Resources\TwigBundle\views\Exception" />
+      <recent name="G:\wamp64\www\projet\louvre\src\LO\TicketBundle\Entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -662,6 +671,8 @@
       <workItem from="1549994730713" duration="238000" />
       <workItem from="1549995105516" duration="599000" />
       <workItem from="1550001350375" duration="2633000" />
+      <workItem from="1550743885172" duration="2817000" />
+      <workItem from="1550854171861" duration="135000" />
     </task>
     <task id="LOCAL-00001" summary="calcul tickets + display tickets">
       <created>1543600460337</created>
@@ -688,13 +699,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="508497000" />
+    <option name="totallyTimeSpent" value="511449000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2575" height="1424" extended-state="6" />
+    <frame x="752" y="107" width="1474" height="847" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14017962" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24589041" />
       <window_info id="Structure" order="1" weight="0.24970178" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -765,9 +776,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="functional website base" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/known_hosts" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/config" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/.ovhconfig" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/security.yml" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/services.yml" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/routing.yml" />
@@ -880,9 +888,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/Term_commande.php" />
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Entity/Ticket.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -918,24 +923,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Services/Mailer/SendMail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/layout.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-450">
           <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -950,13 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="103" column="42" selection-start-line="103" selection-start-column="42" selection-end-line="103" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -998,17 +982,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2730">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="595" column="3" selection-start-line="595" selection-start-column="3" selection-end-line="595" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email_renvoi.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/emai_renvoil.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Services/Mailer/SendMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
