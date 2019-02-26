@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="functional website base" />
+    <list default="true" id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="functional website base">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +35,11 @@
           <entry key="project.closed" value="90" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="37" />
+          <entry key="project.open.time.4" value="38" />
           <entry key="project.open.time.5" value="46" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="92" />
+          <entry key="project.opened" value="93" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -50,7 +53,7 @@
           <entry key="php" value="11042" />
           <entry key="twig" value="7379" />
           <entry key="txt" value="143" />
-          <entry key="yml" value="381" />
+          <entry key="yml" value="390" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -61,7 +64,7 @@
           <entry key="PHP" value="11042" />
           <entry key="PLAIN_TEXT" value="202" />
           <entry key="Twig" value="7379" />
-          <entry key="YAML" value="381" />
+          <entry key="YAML" value="390" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,7 +81,7 @@
           <entry key="png" value="2" />
           <entry key="sample" value="1" />
           <entry key="twig" value="191" />
-          <entry key="yml" value="74" />
+          <entry key="yml" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -90,7 +93,7 @@
           <entry key="PHP" value="276" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="Twig" value="191" />
-          <entry key="YAML" value="74" />
+          <entry key="YAML" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -110,10 +113,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
+        <entry file="file://$USER_HOME$/Desktop/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+            <state relative-caret-position="90">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -121,8 +124,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="120">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="85" selection-start-line="4" selection-start-column="2" selection-end-line="5" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -159,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/HomeCommandTest.php" />
         <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/Test.php" />
         <option value="$PROJECT_DIR$/web/css/form.css" />
         <option value="$PROJECT_DIR$/app/config/config_prod_secrets.php" />
@@ -208,6 +219,7 @@
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/emai_renvoil.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" />
+        <option value="$USER_HOME$/Desktop/routing.yml" />
         <option value="$USER_HOME$/Desktop/security.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
       </list>
@@ -266,11 +278,11 @@
       <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1128" />
-    <option name="y" value="160" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1392" />
+    <option name="y" value="666" />
     <option name="width" value="2211" />
-    <option name="height" value="1271" />
+    <option name="height" value="1272" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -282,6 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -469,7 +482,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -661,6 +673,7 @@
       <workItem from="1550001350375" duration="2633000" />
       <workItem from="1550743885172" duration="2817000" />
       <workItem from="1550854171861" duration="276000" />
+      <workItem from="1551185298210" duration="1447000" />
     </task>
     <task id="LOCAL-00001" summary="calcul tickets + display tickets">
       <created>1543600460337</created>
@@ -687,10 +700,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="511590000" />
+    <option name="totallyTimeSpent" value="513037000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="752" y="107" width="1474" height="847" extended-state="0" />
+    <frame x="928" y="444" width="1474" height="848" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24589041" />
@@ -764,7 +777,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="functional website base" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/security.yml" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/services.yml" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/routing.yml" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/config_dev.yml" />
@@ -1007,17 +1019,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Desktop/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="150">
+          <caret line="5" column="85" selection-start-line="4" selection-start-column="2" selection-end-line="5" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="120">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
