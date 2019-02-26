@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="update" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="2011403167">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="dist" value="11" />
+          <entry key="htaccess" value="3" />
+          <entry key="php" value="7" />
+          <entry key="twig" value="2" />
+          <entry key="yml" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="7" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Twig" value="2" />
+          <entry key="YAML" value="21" />
+          <entry key="htaccess" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dist" value="2" />
+          <entry key="php" value="3" />
+          <entry key="txt" value="6" />
+          <entry key="yml" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="3" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="YAML" value="10" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/Test.php" />
+        <option value="$PROJECT_DIR$/web/css/form.css" />
+        <option value="$PROJECT_DIR$/app/config/config_prod_secrets.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/TicketType.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Services/Mailer/SendMail.php" />
+        <option value="$PROJECT_DIR$/fortrabbit.yml" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/config" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml.dist" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/routing.yml" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Commande_temp.php" />
+        <option value="$PROJECT_DIR$/app/config/config_prod.yml" />
+        <option value="$USER_HOME$/Desktop/Ticket_delete.php" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error404.html.twig.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/Exception/error404.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error418.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error403.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error404.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Reservation.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Commande_Temp.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/CommandeType.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/CommandeTicketType.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Ticket.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Entity/Commande.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/Commande_temp_delete.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/Term_commande.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/commande.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/layout.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/renvoi.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/index.html.twig" />
+        <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/CommandeControllerTest.php" />
+        <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/TicketControllerTest.php" />
+        <option value="$PROJECT_DIR$/web/js/main.js" />
+        <option value="$PROJECT_DIR$/web/css/main.css" />
+        <option value="$USER_HOME$/Desktop/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" />
+        <option value="$USER_HOME$/Desktop/config_prod.yml" />
+        <option value="$USER_HOME$/Desktop/parameters.yml.dist" />
+        <option value="$USER_HOME$/Desktop/config.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic" />
+      <path value="$PROJECT_DIR$/vendor/symfony/assetic-bundle" />
+      <path value="$PROJECT_DIR$/vendor/bin/.phpunit" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1581" />
+    <option name="y" value="676" />
+    <option name="width" value="2211" />
+    <option name="height" value="1467" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="TwigBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="TwigBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="TwigBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+              <item name="Type" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LO" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+              <item name="Mailer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="LOTicketBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="LOTicketBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="louvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="louvre" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\wamp64\www\projet\louvre\app\Resources\views\default" />
+      <recent name="G:\wamp64\www\projet\louvre\app\Resources\views" />
+      <recent name="G:\wamp64\www\projet\louvre\app\Resources\TwigBundle\views" />
+      <recent name="G:\wamp64\www\projet\louvre\app\Resources\TwigBundle" />
+      <recent name="G:\wamp64\www\projet\louvre\src\LO\TicketBundle\Resources\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\wamp64\www\projet\louvre\app\Resources\TwigBundle\views\Exception" />
+      <recent name="G:\wamp64\www\projet\louvre\src\LO\TicketBundle\Entity" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="" />
+      <created>1530032628571</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530032628571</updated>
+      <workItem from="1530032630547" duration="7000" />
+      <workItem from="1530032651976" duration="2916000" />
+      <workItem from="1530091352459" duration="3153000" />
+      <workItem from="1530117497198" duration="3078000" />
+      <workItem from="1530709069320" duration="1433000" />
+      <workItem from="1530723235703" duration="1336000" />
+      <workItem from="1531297523880" duration="3222000" />
+      <workItem from="1531328982263" duration="2356000" />
+      <workItem from="1531897513548" duration="1000" />
+      <workItem from="1531897523398" duration="1005000" />
+      <workItem from="1532538733597" duration="2126000" />
+      <workItem from="1533135295937" duration="13091000" />
+      <workItem from="1534928323297" duration="1153000" />
+      <workItem from="1534956220444" duration="162000" />
+      <workItem from="1535123879596" duration="2769000" />
+      <workItem from="1535443631760" duration="3255000" />
+      <workItem from="1535563241912" duration="7397000" />
+      <workItem from="1536703742694" duration="2754000" />
+      <workItem from="1537974631571" duration="8375000" />
+      <workItem from="1537988223784" duration="4199000" />
+      <workItem from="1538001526598" duration="3954000" />
+      <workItem from="1538036257310" duration="1233000" />
+      <workItem from="1538492154686" duration="628000" />
+      <workItem from="1538585446805" duration="2295000" />
+      <workItem from="1538640813638" duration="873000" />
+      <workItem from="1538659475864" duration="1198000" />
+      <workItem from="1538768502706" duration="3605000" />
+      <workItem from="1539032500400" duration="4346000" />
+      <workItem from="1539073604961" duration="2796000" />
+      <workItem from="1539121855242" duration="705000" />
+      <workItem from="1539122578616" duration="2295000" />
+      <workItem from="1539250175274" duration="4052000" />
+      <workItem from="1539273961461" duration="7021000" />
+      <workItem from="1539691614308" duration="300000" />
+      <workItem from="1539693072724" duration="4200000" />
+      <workItem from="1539851185402" duration="2360000" />
+      <workItem from="1540217848412" duration="9312000" />
+      <workItem from="1540476747384" duration="4953000" />
+      <workItem from="1540481732830" duration="7362000" />
+      <workItem from="1540573342420" duration="3007000" />
+      <workItem from="1540588897766" duration="331000" />
+      <workItem from="1541066202764" duration="4317000" />
+      <workItem from="1541098049148" duration="9038000" />
+      <workItem from="1541178951437" duration="3244000" />
+      <workItem from="1541501376185" duration="42000" />
+      <workItem from="1541503074093" duration="2339000" />
+      <workItem from="1541529350753" duration="42000" />
+      <workItem from="1541670232271" duration="9034000" />
+      <workItem from="1542125478963" duration="681000" />
+      <workItem from="1542126163840" duration="4294000" />
+      <workItem from="1542134080077" duration="2590000" />
+      <workItem from="1542148411808" duration="3197000" />
+      <workItem from="1542276252766" duration="3669000" />
+      <workItem from="1542452497138" duration="220000" />
+      <workItem from="1542452732279" duration="509000" />
+      <workItem from="1542805948388" duration="579000" />
+      <workItem from="1542806633168" duration="1475000" />
+      <workItem from="1542808128825" duration="1912000" />
+      <workItem from="1542823023415" duration="6334000" />
+      <workItem from="1542880531344" duration="4017000" />
+      <workItem from="1542964972887" duration="5213000" />
+      <workItem from="1543334436165" duration="5266000" />
+      <workItem from="1543412929568" duration="4002000" />
+      <workItem from="1543424954436" duration="599000" />
+      <workItem from="1543486674153" duration="3188000" />
+      <workItem from="1543574525795" duration="8912000" />
+      <workItem from="1543596779759" duration="12996000" />
+      <workItem from="1543842087745" duration="3687000" />
+      <workItem from="1544026405396" duration="749000" />
+      <workItem from="1544028490554" duration="1093000" />
+      <workItem from="1544029881996" duration="6902000" />
+      <workItem from="1544092107459" duration="8319000" />
+      <workItem from="1544633029174" duration="772000" />
+      <workItem from="1544644789541" duration="6900000" />
+      <workItem from="1544694635255" duration="6021000" />
+      <workItem from="1544737960036" duration="7442000" />
+      <workItem from="1544800638310" duration="3220000" />
+      <workItem from="1545150888997" duration="1791000" />
+      <workItem from="1545152700665" duration="1794000" />
+      <workItem from="1545154511727" duration="1793000" />
+      <workItem from="1545203930141" duration="1790000" />
+      <workItem from="1545205738824" duration="258000" />
+      <workItem from="1545948012246" duration="1789000" />
+      <workItem from="1545949851526" duration="1794000" />
+      <workItem from="1545951665163" duration="1792000" />
+      <workItem from="1545953476839" duration="1578000" />
+      <workItem from="1546254389963" duration="599000" />
+      <workItem from="1546261221346" duration="1793000" />
+      <workItem from="1546263042134" duration="791000" />
+      <workItem from="1546264366395" duration="1793000" />
+      <workItem from="1546266180171" duration="1608000" />
+      <workItem from="1546267997462" duration="761000" />
+      <workItem from="1546444929191" duration="599000" />
+      <workItem from="1546445753606" duration="6184000" />
+      <workItem from="1546532361265" duration="7157000" />
+      <workItem from="1546608243683" duration="5200000" />
+      <workItem from="1546679359646" duration="5120000" />
+      <workItem from="1546761891961" duration="2100000" />
+      <workItem from="1546968527879" duration="5130000" />
+      <workItem from="1547048193671" duration="4006000" />
+      <workItem from="1547113928518" duration="2476000" />
+      <workItem from="1547197278701" duration="4897000" />
+      <workItem from="1547558481361" duration="7669000" />
+      <workItem from="1547643955889" duration="8387000" />
+      <workItem from="1547658261856" duration="3774000" />
+      <workItem from="1547719348921" duration="3210000" />
+      <workItem from="1547734629870" duration="7169000" />
+      <workItem from="1547835154127" duration="3500000" />
+      <workItem from="1547851019245" duration="1205000" />
+      <workItem from="1548088713711" duration="5438000" />
+      <workItem from="1548173183267" duration="8046000" />
+      <workItem from="1548250684969" duration="2075000" />
+      <workItem from="1548254616191" duration="893000" />
+      <workItem from="1548267728513" duration="1652000" />
+      <workItem from="1548275201534" duration="2692000" />
+      <workItem from="1548324200665" duration="6257000" />
+      <workItem from="1548368949807" duration="2849000" />
+      <workItem from="1548426393398" duration="599000" />
+      <workItem from="1548439043163" duration="599000" />
+      <workItem from="1548690150415" duration="4141000" />
+      <workItem from="1548716225525" duration="4941000" />
+      <workItem from="1548723608097" duration="1448000" />
+      <workItem from="1548840135104" duration="2561000" />
+      <workItem from="1548863820415" duration="1384000" />
+      <workItem from="1548867713380" duration="842000" />
+      <workItem from="1548925924473" duration="599000" />
+      <workItem from="1548930273319" duration="2755000" />
+      <workItem from="1548949951052" duration="2664000" />
+      <workItem from="1548955417074" duration="701000" />
+      <workItem from="1549037529106" duration="2396000" />
+      <workItem from="1549313177076" duration="1610000" />
+      <workItem from="1549372819638" duration="5370000" />
+      <workItem from="1549455530921" duration="1436000" />
+      <workItem from="1549477242871" duration="2511000" />
+      <workItem from="1549530552920" duration="24077000" />
+      <workItem from="1549617397488" duration="2678000" />
+      <workItem from="1549629713873" duration="2762000" />
+      <workItem from="1549880934960" duration="16258000" />
+      <workItem from="1549975462492" duration="6078000" />
+      <workItem from="1549993672152" duration="790000" />
+      <workItem from="1549994730713" duration="238000" />
+      <workItem from="1549995105516" duration="599000" />
+      <workItem from="1550001350375" duration="2633000" />
+      <workItem from="1551191152537" duration="2261000" />
+      <workItem from="1551203414333" duration="3855000" />
+    </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1551192685624</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551192685624</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Improve calcul tickets + display tickets + checkout">
+      <created>1543622912122</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543622912122</updated>
+    </task>
+    <task id="LOCAL-00003" summary="functional website base">
+      <created>1548369897742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1548369897742</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6701000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1054" y="451" width="1474" height="978" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24589041" />
+      <window_info id="Structure" order="1" weight="0.24970178" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32343987" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32791328" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32952815" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32962227" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="calcul tickets + display tickets" />
+    <MESSAGE value="Improve calcul tickets + display tickets + checkout" />
+    <MESSAGE value="functional website base" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/TicketType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Services/Mailer/SendMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/CommandeType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/CommandeTicketType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/LOTicketBundle/Controller/CommandeControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+          <folding>
+            <element signature="e#45#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
