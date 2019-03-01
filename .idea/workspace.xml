@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="update" />
+    <list default="true" id="62e821f1-6cd4-4ec7-9c71-6e2dc69a57ae" name="Default" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,40 +22,42 @@
         <counts>
           <entry key="dist" value="11" />
           <entry key="htaccess" value="3" />
-          <entry key="php" value="7" />
-          <entry key="twig" value="2" />
+          <entry key="php" value="10" />
+          <entry key="twig" value="12" />
           <entry key="yml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="7" />
+          <entry key="PHP" value="10" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Twig" value="2" />
+          <entry key="Twig" value="12" />
           <entry key="YAML" value="21" />
           <entry key="htaccess" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dist" value="2" />
-          <entry key="php" value="3" />
+          <entry key="php" value="9" />
+          <entry key="twig" value="11" />
           <entry key="txt" value="6" />
           <entry key="yml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="3" />
+          <entry key="PHP" value="9" />
           <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Twig" value="11" />
           <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
@@ -58,11 +65,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/renvoi.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state relative-caret-position="570">
+              <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="88" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
+              <folding>
+                <element signature="e#45#81#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -84,7 +121,6 @@
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Services/Mailer/SendMail.php" />
         <option value="$PROJECT_DIR$/fortrabbit.yml" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/config" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/parameters.yml.dist" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/routing.yml" />
@@ -114,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/layout.twig" />
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/renvoi.html.twig" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/index.html.twig" />
         <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/CommandeControllerTest.php" />
         <option value="$PROJECT_DIR$/tests/LOTicketBundle/Controller/TicketControllerTest.php" />
         <option value="$PROJECT_DIR$/web/js/main.js" />
@@ -123,10 +158,12 @@
         <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" />
         <option value="$USER_HOME$/Desktop/config_prod.yml" />
         <option value="$USER_HOME$/Desktop/parameters.yml.dist" />
         <option value="$USER_HOME$/Desktop/config.yml" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig" />
+        <option value="$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php" />
       </list>
     </option>
   </component>
@@ -184,9 +221,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1581" />
-    <option name="y" value="676" />
-    <option name="width" value="2211" />
+    <option name="x" value="381" />
+    <option name="y" value="381" />
+    <option name="width" value="2750" />
     <option name="height" value="1467" />
   </component>
   <component name="ProjectView">
@@ -567,6 +604,8 @@
       <workItem from="1550001350375" duration="2633000" />
       <workItem from="1551191152537" duration="2261000" />
       <workItem from="1551203414333" duration="3855000" />
+      <workItem from="1551348711294" duration="599000" />
+      <workItem from="1551436455759" duration="1774000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1551192685624</created>
@@ -593,13 +632,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6701000" />
+    <option name="totallyTimeSpent" value="9074000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1054" y="451" width="1474" height="978" extended-state="0" />
+    <frame x="254" y="254" width="1833" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24589041" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19736119" />
       <window_info id="Structure" order="1" weight="0.24970178" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -698,13 +737,6 @@
     <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/TicketType.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Services/Mailer/SendMail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Form/Type/CommandeType.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -714,16 +746,6 @@
           <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/LOTicketBundle/Controller/CommandeControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -739,55 +761,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/parameters.yml.dist">
+    <entry file="file://$USER_HOME$/Desktop/parameters.yml.dist" />
+    <entry file="file://$USER_HOME$/Desktop/parameters.yml" />
+    <entry file="file://$USER_HOME$/Desktop/config.yml" />
+    <entry file="file://$USER_HOME$/Desktop/config_prod.yml" />
+    <entry file="file://$USER_HOME$/Desktop/.htaccess" />
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="660">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/commande.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="-414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/email.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/layout.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1328" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/panier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="110" selection-start-line="19" selection-start-column="110" selection-end-line="19" selection-end-column="110" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/recapitulatif.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="47" column="39" lean-forward="true" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        <state relative-caret-position="786">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/config_prod.yml">
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Services/Mailer/SendMail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="450">
+          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/.htaccess">
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/renvoi.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="570">
+          <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/TicketController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/views/ticket.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="29" column="76" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Controller/CommandeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+        <state relative-caret-position="360">
+          <caret line="18" column="88" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
           <folding>
             <element signature="e#45#81#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LO/TicketBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
         </state>
       </provider>
     </entry>

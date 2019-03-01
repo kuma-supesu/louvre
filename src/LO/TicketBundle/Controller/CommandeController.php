@@ -17,7 +17,6 @@ class CommandeController extends Controller
         $id = $request->query->get('commandeId');
         if ($id) {
             $commande = $this->getDoctrine()->getRepository(Commande::class)->find($id);
-            dump($commande->getId());exit;
         } else {
             $commande = new Commande();
         }
@@ -94,7 +93,7 @@ class CommandeController extends Controller
             $commande = $this->getDoctrine()->getRepository(Commande::class)->findOneByEmail($data);
 
             if ($commande === null) {
-                $error[] = 'Désolé, cet adresse E-mail ne correspont à aucune enrengistrés.';
+                $error[] = 'Désolés, cette adresse E-mail ne correspond à aucune enrengistrée.';
             }
             if (!$error) {
                 $datas = ['commande' => $commande];
